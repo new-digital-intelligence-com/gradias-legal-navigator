@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 const base=process.env.TEST_URL||'http://127.0.0.1:5173';
 async function post(body,origin=base){return fetch(base+'/api/ask',{method:'POST',headers:{Origin:origin,'Content-Type':'application/json'},body:typeof body==='string'?body:JSON.stringify(body)});}
 const health=await fetch(base+'/api/ask').then(r=>r.json());assert.ok(['search','ai'].includes(health.mode));
+const archiveResponse=await fetch(base+'/competitors/04.txt');assert.equal(archiveResponse.status,200);const archive=await archiveResponse.json();assert.equal(archive.pages.length,10);assert.match(archive.pages[2].text,/No AI model training/);
 assert.equal((await post({question:'Consent'},'https://untrusted.example')).status,403);
 assert.equal((await post('{broken')).status,400);
 assert.equal((await post({question:''})).status,400);

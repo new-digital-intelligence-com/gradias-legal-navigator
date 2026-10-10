@@ -51,9 +51,10 @@ for comp in coverage:
             if ranges and n==ranges[-1][1]+1:ranges[-1][1]=n
             else:ranges.append([n,n])
         source['pageRanges']=', '.join(str(a) if a==b else f'{a}–{b}' for a,b in ranges)
-    (public/f"{comp['id']:02d}.json").write_text(json.dumps({'id':ident,'pages':pages},ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+    # Sites serves plain-text assets; .json paths are handled as app routes.
+    (public/f"{comp['id']:02d}.txt").write_text(json.dumps({'id':ident,'pages':pages},ensure_ascii=False,separators=(',',':')),encoding='utf-8')
     kind='links' if comp['id']==54 else 'statements' if comp['id'] in [32,41] else 'policies'
-    catalog.append({'id':ident,'number':comp['id'],'name':comp['name'],'website':comp['website'].get('hyperlink') or comp['website'].get('formattedValue',''),'status':comp['status'],'note':comp['note'],'coverage':comp['coverage'],'coverageKind':kind,'capturedCount':comp['captured_count'],'pages':len(pages),'bundle':bundle,'sources':sources,'files':list(downloads.values()),'textUrl':f"/competitors/{comp['id']:02d}.json",'positions':positions.get(comp['id'],{}).get('positions',[]),'caveat':positions.get(comp['id'],{}).get('caveat','')})
+    catalog.append({'id':ident,'number':comp['id'],'name':comp['name'],'website':comp['website'].get('hyperlink') or comp['website'].get('formattedValue',''),'status':comp['status'],'note':comp['note'],'coverage':comp['coverage'],'coverageKind':kind,'capturedCount':comp['captured_count'],'pages':len(pages),'bundle':bundle,'sources':sources,'files':list(downloads.values()),'textUrl':f"/competitors/{comp['id']:02d}.txt",'positions':positions.get(comp['id'],{}).get('positions',[]),'caveat':positions.get(comp['id'],{}).get('caveat','')})
 for name in ['Competitor coverage.json','Source manifest.json','Verification.json','Read me.txt']:
     shutil.copy2(root/name,data/('competitor-'+name.lower().replace(' ','-')))
 result={'captured':'2026-10-10','counts':{'competitors':len(catalog),'capturedDocuments':sum(s['status']=='Captured' for s in manifest),'links':len(manifest),'files':len(files),'pages':sum(c['pages'] for c in catalog)},'competitors':catalog}
