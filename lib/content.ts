@@ -22,7 +22,7 @@ export type Passage={id:string;title:string;text:string;tab:'matrix'|'countries'
 export const passages:Passage[]=[
  ...content.qa.map(s=>({id:s.id,title:s.title,text:sectionText(s),tab:'qa' as const,target:s.id,country:'All',urls:s.blocks.flatMap(b=>(b.links||[]).map(l=>l.url))})),
  ...content.countryDocs.flatMap(d=>d.sections.flatMap(s=>s.blocks.filter(b=>blockText(b).length>90).map((b,i)=>({id:`${s.id}-p${i}`,title:`${countryNames[d.id]} · ${s.title}`,text:blockText(b),tab:'countries' as const,target:s.id,country:d.id,urls:s.blocks.flatMap(x=>(x.links||[]).map(l=>l.url))})))),
- ...content.requirements.map(r=>({id:r.id,title:`${r.id} · ${r.title}`,text:r.cells.filter(c=>c.value==='Yes').map(c=>c.note).join('\n\n'),tab:'matrix' as const,target:r.id,country:'All',urls:[]})),
+ ...content.requirements.map(r=>({id:r.id,title:`${r.id} · ${r.title}`,text:r.cells.filter(c=>c.value==='Yes').map(c=>{const instrument=content.instruments.find(i=>i.id===c.instrumentId);return `${instrument?.country} · ${instrument?.title} (${instrument?.type}):\n${c.note}`;}).join('\n\n'),tab:'matrix' as const,target:r.id,country:'All',urls:[]})),
  ...content.states.map((s,i)=>({id:`state-${i}`,title:`${s.name} · official guidance`,text:`${s.finding}\nLimits: ${s.limits}\n${s.date} · ${s.locator}`,tab:'countries' as const,target:`state-${i}`,country:'de',urls:[s.url]})),
  ...content.readme.map((r,i)=>({id:`method-${i}`,title:r.label,text:r.text,tab:'sources' as const,target:'methodology',country:'All',urls:[content.meta.spreadsheetUrl]}))
 ];
@@ -32,7 +32,9 @@ const index=passages.map(p=>({p,title:tokens(p.title),words:tokens(p.title+' '+p
 const df=new Map<string,number>(); index.forEach(d=>new Set(d.words).forEach(t=>df.set(t,(df.get(t)||0)+1)));
 export function retrieve(question:string,country='All',limit=10):Passage[]{
  const synonyms:Record<string,string>={gdpr:'dsgvo datenschutz grundverordnung',consent:'einwilligung parental',anonymous:'anonymised anonymisation pseudonymisation',anonymized:'anonymisation',approval:'authorisation permission freigabe',permission:'authorisation approval',teacher:'lehrkraft examiner',bias:'discrimination equality',dpa:'processor contract auftragsverarbeitung',subprocessor:'unterauftragnehmer processor llm',germany:'deutschland',uk:'britain united kingdom',us:'ferpa united states',deadline:'timing date commencement',second:'opinion zweimeinung vergleich',nrw:'nordrhein westfalen'};
- const q=question.toLowerCase();const expanded=question+' '+Object.entries(synonyms).filter(([k])=>new RegExp('\\b'+k+'\\b').test(q)).map(([,v])=>v).join(' ');
+ const q=question.toLowerCase();
+ const germanConcepts=[[/deutschland/,'germany'],[/lehrer|lehrkr[aä]ft/,'teacher institution'],[/sch[uü]lerdaten|personenbezogene[nr]? daten/,'student pupil personal data'],[/senden|[uü]bermitteln|weitergeben/,'submitting transfer processing'],[/vorgaben|vorschriften|verbot/,'norms requirements prohibit']].filter(([pattern])=>(pattern as RegExp).test(q)).map(([,words])=>words).join(' ');
+ const expanded=question+' '+germanConcepts+' '+Object.entries(synonyms).filter(([k])=>new RegExp('\\b'+k+'\\b').test(q)).map(([,v])=>v).join(' ');
  const ts=[...new Set(tokens(expanded))];if(!ts.length)return [];
  const filtered=index.filter(d=>country==='All'||d.p.country==='All'||d.p.country===countryKey[country]||d.p.country===country);
  return filtered.map(d=>{let score=0,hits=0;for(const t of ts){const n=d.words.filter(w=>w===t).length;if(n){hits++;score+=Math.log(1+(index.length-(df.get(t)||0)+.5)/((df.get(t)||0)+.5))*n*2.2/(n+1.2*(.25+.75*d.words.length/180));if(d.title.includes(t))score+=3;}}return {p:d.p,score:score*(.5+hits/ts.length)+(d.p.tab==='qa'?1:0),hits};}).filter(x=>x.hits>0&&x.score>2).sort((a,b)=>b.score-a.score).slice(0,limit).map(x=>x.p);

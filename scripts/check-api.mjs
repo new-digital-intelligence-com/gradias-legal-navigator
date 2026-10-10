@@ -21,7 +21,10 @@ if(health.mode==='search'){
 }else if(process.env.TEST_LIVE_AI==='1'){
  const response=await post({question:'Does CoGrader use student work for AI model training?',competitorId:'competitor-04'});
  const answer=await response.json();assert.equal(response.status,200,answer.error);assert.equal(answer.mode,'ai');assert.ok(answer.citations.length);assert.ok(answer.citations.every(c=>c.target.startsWith('competitor-04-p')));assert.match(answer.text,/\[competitor-04-p\d+\]/);assert.doesNotMatch(answer.text,/sk-proj-/);
+ const germanResponse=await post({question:'Gibt es in Deutschland Vorgaben für Lehrer Schülerdaten nicht an LLMs zu senden? Welche sind das?',country:'All'});
+ const german=await germanResponse.json();assert.equal(germanResponse.status,200,german.error);assert.equal(german.mode,'ai');assert.ok(german.text.length>800,'Explain the requirements, rather than returning a document list.');assert.match(german.text,/DSGVO|Datenschutz-Grundverordnung/);assert.match(german.text,/personenbezogen|Schülerdaten/i);assert.ok(german.citations.length>=2,'A question about multiple rules needs supporting evidence.');assert.doesNotMatch(german.text,/Here are the closest passages|Open a passage to read/);assert.ok(german.citations.every(c=>german.text.includes('['+c.id+']')));
+ console.log('German answer review:\n'+german.text);
  const nav=await post({question:'Show me the German country view'}).then(r=>r.json());assert.equal(nav.action.tab,'countries');
  const unknown=await post({question:'Tell me about extraterrestrial pizza on Jupiter'}).then(r=>r.json());assert.equal(unknown.citations.length,0);
- console.log('PASS: anonymous live AI answer with source citations, navigation, missing evidence and input guards.');
-}else console.log('PASS: input guards. Set TEST_LIVE_AI=1 to make one paid, anonymous AI smoke-test request.');
+ console.log('PASS: anonymous live AI answers, substantive German requirements explanation, source citations, navigation, missing evidence and input guards.');
+}else console.log('PASS: input guards. Set TEST_LIVE_AI=1 to make two paid, anonymous AI smoke-test requests.');
