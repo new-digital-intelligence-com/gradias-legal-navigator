@@ -1,3 +1,4 @@
+import {mentionedCompetitors} from './competitors';
 import raw from '../data/content.json';
 
 export type Block = {type:string;style?:string;text?:string;links?:{label:string;url:string}[];rows?:string[][]};
@@ -17,7 +18,7 @@ export const blockText=(b:Block)=>b.text||b.rows?.map(r=>r.join(' | ')).join('\n
 export const sectionText=(s:Section)=>s.blocks.map(blockText).join('\n\n');
 export const safeUrl=(url:string)=>/^https?:\/\//i.test(url)||url.startsWith('/documents/')?url:'#';
 
-export type Passage={id:string;title:string;text:string;tab:'matrix'|'countries'|'qa'|'sources';target:string;country:string;urls:string[]};
+export type Passage={id:string;title:string;text:string;tab:'matrix'|'countries'|'qa'|'sources'|'competitors';target:string;country:string;urls:string[]};
 export const passages:Passage[]=[
  ...content.qa.map(s=>({id:s.id,title:s.title,text:sectionText(s),tab:'qa' as const,target:s.id,country:'All',urls:s.blocks.flatMap(b=>(b.links||[]).map(l=>l.url))})),
  ...content.countryDocs.flatMap(d=>d.sections.flatMap(s=>s.blocks.filter(b=>blockText(b).length>90).map((b,i)=>({id:`${s.id}-p${i}`,title:`${countryNames[d.id]} · ${s.title}`,text:blockText(b),tab:'countries' as const,target:s.id,country:d.id,urls:s.blocks.flatMap(x=>(x.links||[]).map(l=>l.url))})))),
@@ -37,9 +38,11 @@ export function retrieve(question:string,country='All',limit=10):Passage[]{
  return filtered.map(d=>{let score=0,hits=0;for(const t of ts){const n=d.words.filter(w=>w===t).length;if(n){hits++;score+=Math.log(1+(index.length-(df.get(t)||0)+.5)/((df.get(t)||0)+.5))*n*2.2/(n+1.2*(.25+.75*d.words.length/180));if(d.title.includes(t))score+=3;}}return {p:d.p,score:score*(.5+hits/ts.length)+(d.p.tab==='qa'?1:0),hits};}).filter(x=>x.hits>0&&x.score>2).sort((a,b)=>b.score-a.score).slice(0,limit).map(x=>x.p);
 }
 
-export type NavAction={tab:'matrix'|'countries'|'qa'|'sources';country?:string;target?:string;label:string};
+export type NavAction={tab:'matrix'|'countries'|'qa'|'sources'|'competitors';country?:string;target?:string;label:string};
 export function navigationIntent(q:string):NavAction|null{
  if(!/\b(show|open|go|navigate|take|view|switch|zeige|öffne)\b/i.test(q))return null;
+ const competitor=mentionedCompetitors(q)[0];
+ if(competitor||/competitor|competitive|wettbewerb/i.test(q))return {tab:'competitors',target:competitor?.id,label:competitor?'Open '+competitor.name:'Open competitors'};
  const country=/german|deutsch/i.test(q)?'Germany':/\buk\b|united kingdom|brit/i.test(q)?'UK':/\bus\b|united states|america/i.test(q)?'US':undefined;
  const tab=/matrix|requirement/i.test(q)?'matrix':/\bqa\b|q&a|question|faq/i.test(q)?'qa':/source|document|link/i.test(q)?'sources':country||/countr/i.test(q)?'countries':null;
  return tab?{tab,country,label:`Open ${country?country+' ':''}${tab==='qa'?'Q&A':tab==='matrix'?'requirements matrix':tab==='countries'?'country view':'sources'}`} : null;

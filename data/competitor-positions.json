@@ -1,0 +1,1409 @@
+[
+  {
+    "competitorId": 1,
+    "positions": [
+      {
+        "topic": "Data use",
+        "summary": "Inspera describes the customer as controller and itself as processor under its assessment DPA, including third-party processing.",
+        "quote": "A Data Processing Agreement (DPA) between the Data Controller (customer organisation) and the Data Processor (Inspera) regulates how personal data is defined and processed, also covering all data processing by Third Parties.",
+        "page": 13,
+        "sourceTitle": "Data Sub-Processors",
+        "sourceUrl": "https://inspera.com/legal/dpa/"
+      },
+      {
+        "topic": "AI training",
+        "summary": "Graide describes question-specific AI trained on responses and assessor feedback; it says training data is anonymised after grading, with no personally identifiable information used.",
+        "quote": "No personally identifiable information is used in the training of these AI models. All data used for training is anonymised immediately after grading.",
+        "page": 22,
+        "sourceTitle": "Data Protection Provisions",
+        "sourceUrl": "https://www.graide.co.uk/data-protection-provisions"
+      },
+      {
+        "topic": "Retention & rights",
+        "summary": "Graide retains training data during platform use and for one further year, unless consent allows longer retention.",
+        "quote": "Data used for AI model training is retained: For the duration of the Customer’s use of the platform For one additional year after the end of the customer relationship, unless consent is provided for further retention 4.4.",
+        "page": 22,
+        "sourceTitle": "Data Protection Provisions",
+        "sourceUrl": "https://www.graide.co.uk/data-protection-provisions"
+      }
+    ],
+    "caveat": "Combined Inspera/Graide entry. Graide terms for the trial, its data-protection provisions, and Inspera website/product policies have different scopes; do not treat one statement as applying to every product."
+  },
+  {
+    "competitorId": 2,
+    "positions": [
+      {
+        "topic": "AI training",
+        "summary": "EduGears says neither it nor its AI provider partners use customer data to train AI models.",
+        "quote": "Your data is never used to train AI models by EduGears AI or any of our AI provider partners.",
+        "page": 4,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://lti.edugears.ai/en/privacy-policy"
+      },
+      {
+        "topic": "Student privacy",
+        "summary": "For under-13 students, EduGears says it relies on school consent under COPPA; it supports GDPR requests where applicable.",
+        "quote": "For students under 13 we rely on school consent under COPPA, and we support GDPR data-subject requests for institutions in scope.",
+        "page": 2,
+        "sourceTitle": "Data Privacy",
+        "sourceUrl": "https://lti.edugears.ai/en/data-privacy"
+      },
+      {
+        "topic": "Retention & rights",
+        "summary": "Uploaded grounding files, such as PDFs or notes, are deleted the same day by default.",
+        "quote": "By default, files you upload (such as source PDFs or notes used to ground AI generation) are deleted the same day.",
+        "page": 2,
+        "sourceTitle": "Data Privacy",
+        "sourceUrl": "https://lti.edugears.ai/en/data-privacy"
+      }
+    ]
+  },
+  {
+    "competitorId": 3,
+    "positions": [
+      {
+        "topic": "AI training",
+        "summary": "Turnitin distinguishes generative AI from its Originality detector: it says it does not train LLMs, but trains a classifier for AI detection.",
+        "quote": "We do not train any generative AI models, or LLMs. We only train a classifier model for AI detection in our Turnitin Originality license.",
+        "page": 88,
+        "sourceTitle": "Trust Center",
+        "sourceUrl": "https://www.turnitin.com/trust-center"
+      },
+      {
+        "topic": "AI training",
+        "summary": "Where Originality AI detection is enabled, Turnitin says current student data is anonymised and may train its classifier.",
+        "quote": "If you do have Turnitin Originality with AI detection enabled, your current student data is anonymized and may be used to train our classifier AI model.",
+        "page": 88,
+        "sourceTitle": "Trust Center",
+        "sourceUrl": "https://www.turnitin.com/trust-center"
+      },
+      {
+        "topic": "Student privacy",
+        "summary": "ExamSoft says it remains under the customer’s direct control for FERPA education records and follows its customer agreement.",
+        "quote": "ExamSoft remains under the direct control of the Customer with respect to the use and maintenance of FERPA-protected “education records” and will use student Personal Information only as set forth in our Customer agreement and in compliance with applicable law.",
+        "page": 12,
+        "sourceTitle": "Product Privacy",
+        "sourceUrl": "https://examsoft.com/product-privacy-policy"
+      }
+    ],
+    "caveat": "Parent-company bundle includes Turnitin, Gradescope and ExamSoft materials. Website policies, product policies and feature-specific training statements are not interchangeable."
+  },
+  {
+    "competitorId": 4,
+    "positions": [
+      {
+        "topic": "AI training",
+        "summary": "CoGrader says customer data, including student work, prompts, rubrics and outputs, is not used to train, fine-tune or develop AI models.",
+        "quote": "No AI model training: CoGrader does not use customer data, including student work, assignment questions, rubrics, prompts, or AI outputs, to train, fine-tune, or develop any AI model.",
+        "page": 3,
+        "sourceTitle": "Privacy",
+        "sourceUrl": "https://cograder.com/privacy-policy/"
+      },
+      {
+        "topic": "Security",
+        "summary": "CoGrader reports a SOC 2 Type 1 attestation from an independent auditor; this is the vendor’s captured statement.",
+        "quote": "CoGrader holds a SOC 2 Type 1 attestation from an independent auditor.",
+        "page": 3,
+        "sourceTitle": "Privacy",
+        "sourceUrl": "https://cograder.com/privacy-policy/"
+      }
+    ]
+  },
+  {
+    "competitorId": 5,
+    "positions": [
+      {
+        "topic": "AI training",
+        "summary": "Ed.ai says student papers and teaching data never train or improve its own or its suppliers’ AI models.",
+        "quote": "Non-utilisation pour l'entraînement : Les copies des élèves et les données pédagogiques ne sont jamais utilisées pour entraîner ou améliorer nos modèles d'IA, ni ceux de nos fournisseurs.",
+        "page": 4,
+        "sourceTitle": "Privacy",
+        "sourceUrl": "https://ed.ai/en/data-privacy/confidentialite"
+      },
+      {
+        "topic": "Human oversight",
+        "summary": "Ed.ai says teachers review, amend and validate AI proposals before a student receives them.",
+        "quote": "L'IA produit une proposition de correction, d'annotation et d'analyse que l'enseignant revoit, modifie et valide avant toute restitution à l'élève.",
+        "page": 4,
+        "sourceTitle": "Privacy",
+        "sourceUrl": "https://ed.ai/en/data-privacy/confidentialite"
+      },
+      {
+        "topic": "Hosting & transfers",
+        "summary": "Ed.ai states that data is hosted and processed in France/Europe and that its AI suppliers operate exclusively in EU regions.",
+        "quote": "Aucun transfert de données hors de l'Union européenne n'a lieu. Toutes les données sont hébergées et traitées en France et en Europe (Microsoft Azure, région France Central / Europe).",
+        "page": 4,
+        "sourceTitle": "Privacy",
+        "sourceUrl": "https://ed.ai/en/data-privacy/confidentialite"
+      },
+      {
+        "topic": "Data processing",
+        "summary": "Outside GAR, Ed.ai distinguishes controller duties for teacher accounts from processor duties for student data supplied by the teacher or institution.",
+        "quote": "Hors GAR (accès direct, École Directe) : Ed.ai agit en qualité de responsable de traitement pour les données des comptes enseignants, et de sous-traitant pour les données des élèves traitées pour le compte de l'enseignant ou de l'établissement.",
+        "page": 2,
+        "sourceTitle": "Privacy",
+        "sourceUrl": "https://ed.ai/en/data-privacy/confidentialite"
+      }
+    ],
+    "caveat": "French excerpts are paraphrased in English. The captured policy separately acknowledges potential US CLOUD Act exposure through Microsoft Azure; EU hosting alone is not presented here as a certification."
+  },
+  {
+    "competitorId": 6,
+    "positions": [
+      {
+        "topic": "AI training",
+        "summary": "Proctor AI’s privacy notice treats platform use as consent to AI processing and lists model training/improvement and anonymised datasets among its purposes.",
+        "quote": "Notice: We use AI models to process academic content. By using our platform, you consent to this use. Train and improve models Enhance assessment accuracy Generate anonymized datasets",
+        "page": 3,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://www.proctorai.io/privacy"
+      },
+      {
+        "topic": "Student privacy",
+        "summary": "Proctor AI says its service is not intended for children under 13 without verifiable parental consent.",
+        "quote": "Children's Privacy Our services are not intended for children under 13 without verifiable parental consent.",
+        "page": 5,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://www.proctorai.io/privacy"
+      },
+      {
+        "topic": "Data processing",
+        "summary": "Its faculty terms advertise GDPR/CCPA compliance and institutional DPAs, alongside encryption and security audits.",
+        "quote": "Data Protection GDPR compliance for international users CCPA compliance for California residents Encryption of data in transit and at rest Regular security audits and assessments Incident response and breach notification Institutional Requirements Custom terms",
+        "page": 12,
+        "sourceTitle": "Faculty Terms - Data Management and Compliance tabs",
+        "sourceUrl": "https://www.proctorai.io/terms/faculty"
+      }
+    ]
+  },
+  {
+    "competitorId": 7,
+    "positions": [
+      {
+        "topic": "Hosting & transfers",
+        "summary": "GradeWithAI identifies US database/application hosting and says its AI providers do not retain data for training under its agreements.",
+        "quote": "Supabase: Database hosting (data stored in US) Vercel: Application hosting (data processed in US) OpenAI/Anthropic/Google: AI processing (data not retained for training per our agreements)",
+        "page": 7,
+        "sourceTitle": "Student Data Privacy",
+        "sourceUrl": "https://www.gradewithai.com/student-data-privacy"
+      },
+      {
+        "topic": "Student privacy",
+        "summary": "Parents are directed through their school for access, correction, deletion or opting a child out of GradeWithAI.",
+        "quote": "Parents have the right to: Review their child's education records processed by GradeWithAI through their school Request correction of inaccurate information through their school Request deletion of their child's data through their school Opt their child out of using GradeWithAI (schools may provide alternative grading methods)",
+        "page": 8,
+        "sourceTitle": "Student Data Privacy",
+        "sourceUrl": "https://www.gradewithai.com/student-data-privacy"
+      },
+      {
+        "topic": "Incident response",
+        "summary": "GradeWithAI promises to notify affected schools within 72 hours of discovering a student-information breach.",
+        "quote": "Notify affected schools within 72 hours of discovering the breach Provide details about the nature of the breach and data affected",
+        "page": 7,
+        "sourceTitle": "Student Data Privacy",
+        "sourceUrl": "https://www.gradewithai.com/student-data-privacy"
+      }
+    ]
+  },
+  {
+    "competitorId": 8,
+    "positions": [
+      {
+        "topic": "AI training",
+        "summary": "Examino says model providers contractually prohibit training on submissions, with abuse-detection retention limited to 30–55 days depending on provider.",
+        "quote": "03 Never any training on your papers Our model providers contractually commit to never training their models on submitted content, redacted or not, and to keeping it only as long as strictly necessary for abuse detection (at most 30 to 55 days depending on the provider).",
+        "page": 6,
+        "sourceTitle": "Legal & Compliance",
+        "sourceUrl": "https://examino.ai/en/legal"
+      },
+      {
+        "topic": "Data minimisation",
+        "summary": "Examino calls its redaction pseudonymisation, not anonymisation: teachers can re-identify students and identifiers may escape masking.",
+        "quote": "These measures constitute pseudonymisation within the meaning of the GDPR, not anonymisation: the teacher, who holds the exam papers and knows their students, remains able to re-identify them, and identifying elements may exceptionally escape redaction.",
+        "page": 4,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://examino.ai/en/legal/privacy-policy"
+      },
+      {
+        "topic": "Human oversight",
+        "summary": "Examino says AI suggests corrections while teachers review and validate every paper; grades are not awarded automatically.",
+        "quote": "The AI suggests a correction; no grade is ever awarded automatically. Every paper is reviewed and validated by the teacher.",
+        "page": 6,
+        "sourceTitle": "Legal & Compliance",
+        "sourceUrl": "https://examino.ai/en/legal"
+      }
+    ]
+  },
+  {
+    "competitorId": 9,
+    "positions": [
+      {
+        "topic": "AI training",
+        "summary": "GradingPal’s addendum says student data or personally identifiable information does not train its own or its subprocessors’ AI models.",
+        "quote": "For the avoidance of doubt, GradingPal does not use Student Data or personally identifiable information to train its AI models or those of its sub-processors.",
+        "page": 39,
+        "sourceTitle": "Data Processing Addendum",
+        "sourceUrl": "https://www.gradingpal.com/data-processing-addendum"
+      },
+      {
+        "topic": "Hosting & transfers",
+        "summary": "Its EU/UK notice allows transfers and storage outside the EEA/UK, including the United States.",
+        "quote": "11International Transfers By default, the personal information we collect may be transferred to and stored in countries outside of the EEA or UK where we and our third-party service providers have operations, including in the United States.",
+        "page": 13,
+        "sourceTitle": "EU/UK Privacy",
+        "sourceUrl": "https://www.gradingpal.com/eu-privacy"
+      },
+      {
+        "topic": "Data use",
+        "summary": "The student DPA prohibits sale and use or disclosure of student data for marketing or advertising.",
+        "quote": "GradingPal will not sell Student Data or use or disclose it for any marketing or advertising purpose;",
+        "page": 35,
+        "sourceTitle": "Student DPA",
+        "sourceUrl": "https://www.gradingpal.com/data-privacy-addendum"
+      }
+    ]
+  },
+  {
+    "competitorId": 10,
+    "positions": [
+      {
+        "topic": "Plan-specific privacy",
+        "summary": "GradeOrbit describes Solo/Team as a browser-redaction “PII-Free Zone,” with no ingestion of unredacted student PII.",
+        "quote": "On the Solo and Team tiers, our servers are a strictly designated “PII-Free Zone” — we do not ingest, store, or process unredacted student PII.",
+        "page": 2,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://www.gradeorbit.co.uk/privacy-policy"
+      },
+      {
+        "topic": "Plan-specific privacy",
+        "summary": "The School tier instead processes unredacted work and real student names under an Article 28 DPA.",
+        "quote": "The School tier works differently: under our Data Processing Agreement, which forms part of our Terms, schools upload un-redacted student work and we store it (and real student names) as a Processor, governed by the DPA and the retention controls set out in this policy and our Transparency Pack.",
+        "page": 2,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://www.gradeorbit.co.uk/privacy-policy"
+      },
+      {
+        "topic": "AI training",
+        "summary": "Pupil questions about approved results are sent to an AI provider, retained up to 30 days, and stated not to be used for marketing or model training.",
+        "quote": "A pupil can also ask questions about their own approved result — those questions, and the result being discussed, are sent to our AI provider to generate a reply, retained for up to 30 days under Operational Logs below, and never used for marketing or to train AI models.",
+        "page": 3,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://www.gradeorbit.co.uk/privacy-policy"
+      }
+    ],
+    "caveat": "Do not apply the Solo/Team no-PII claim to School deployments; the archived policy explicitly distinguishes these tiers."
+  },
+  {
+    "competitorId": 11,
+    "positions": [
+      {
+        "topic": "Hosting & transfers",
+        "summary": "Marking.ai states EU (Frankfurt) storage, but US AI processing and transactional email under SCCs and the UK Addendum.",
+        "quote": "Student work is stored in the EU (Frankfurt) | Yes | AI processing and transactional email in the US, under Standard Contractual Clauses and the UK Addendum | Yes",
+        "page": 7,
+        "sourceTitle": "Security overview",
+        "sourceUrl": "https://marking.ai/security"
+      },
+      {
+        "topic": "AI training",
+        "summary": "Marking.ai says student work never trains its own or its provider’s AI models.",
+        "quote": "Student work is never used to train an AI model, ours or our provider's",
+        "page": 7,
+        "sourceTitle": "Security overview",
+        "sourceUrl": "https://marking.ai/security"
+      },
+      {
+        "topic": "Retention & rights",
+        "summary": "Marking.ai says work is deleted or returned within 30 days of a school request; in-product deletion removes account visibility immediately.",
+        "quote": "Work is kept while the school's account exists and deleted or returned within 30 days of the school asking; deleting work in the product removes it from the account straight away, and permanent deletion is something we do on request.",
+        "page": 5,
+        "sourceTitle": "For students",
+        "sourceUrl": "https://marking.ai/privacy/students"
+      }
+    ]
+  },
+  {
+    "competitorId": 12,
+    "positions": [
+      {
+        "topic": "Student privacy",
+        "summary": "Akindi promises not to release grades to third parties without express permission from the student or parent.",
+        "quote": "Akindi does not and will never release any student's grades to any third party without the student's (or parents') express permission.",
+        "page": 2,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://akindi.com/pages/privacy"
+      },
+      {
+        "topic": "Purpose limitation",
+        "summary": "Akindi says it collects only what is needed for identified purposes and obtains consent before another use.",
+        "quote": "We’ll collect only as much personal information as we need for specific, identified purposes, and we won’t use it for other purposes without obtaining your consent.",
+        "page": 2,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://akindi.com/pages/privacy"
+      }
+    ],
+    "caveat": "The captured privacy policy is dated 24 November 2015; its archived presence does not establish a newer revision."
+  },
+  {
+    "competitorId": 13,
+    "positions": [
+      {
+        "topic": "Data use",
+        "summary": "EssayGrader describes a FERPA school-official role under the direct control and instruction of the district or institution.",
+        "quote": "As applicable, EssayGrader has agreed to act as a “school official” for purposes of FERPA and operates under the direct control and instruction of the applicable school district or educational institution with respect to handling of any student data uploaded to the Service.",
+        "page": 5,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://www.essaygrader.ai/privacy-policy"
+      },
+      {
+        "topic": "Retention & rights",
+        "summary": "EssayGrader says account-related data is permanently deleted within 60 days after account deletion or contract end.",
+        "quote": "If you delete your account or our contractual relationship ends, all the associated data is permanently deleted within 60 days.",
+        "page": 2,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://www.essaygrader.ai/privacy-policy"
+      }
+    ]
+  },
+  {
+    "competitorId": 14,
+    "positions": [
+      {
+        "topic": "Data use",
+        "summary": "Quick Key says it receives student data as a FERPA school official and processes it only for educational purposes.",
+        "quote": "We receive Student Data from School Customers as a “school official” under FERPA and only process Student Data for educational purposes.",
+        "page": 3,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://quickkeyapp.com/privacy-policy/"
+      },
+      {
+        "topic": "Transparency",
+        "summary": "Quick Key offers server locations and its stored personal-data inventory to verified GDPR compliance officers on request.",
+        "quote": "The following information is available to EU GDPR compliance officers on demand, following proof of identity and credentials: Physical location of our data storage servers Physical location of our compute servers A list of what personal data is stored QuickKey does not store credit card i",
+        "page": 4,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://quickkeyapp.com/privacy-policy/"
+      }
+    ]
+  },
+  {
+    "competitorId": 15,
+    "positions": [
+      {
+        "topic": "AI training",
+        "summary": "GradeLab’s privacy policy permits AI training on student documents only with explicit consent.",
+        "quote": "We do not use student documents to train AI models without explicit consent.",
+        "page": 4,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://gradelab.io/privacy"
+      },
+      {
+        "topic": "AI training",
+        "summary": "Its separate GDPR page makes an absolute no-training claim for student work.",
+        "quote": "We will NEVER use student work to train AI models",
+        "page": 11,
+        "sourceTitle": "GDPR",
+        "sourceUrl": "https://gradelab.io/gdpr"
+      },
+      {
+        "topic": "Security",
+        "summary": "GradeLab describes encryption in transit and at rest, role-based access and multi-factor authentication.",
+        "quote": "Technical Security Measures • Encryption: All data is encrypted in transit and at rest using industry-standard protocols • Access Controls: Strict role-based access controls and multi-factor authentication • Network Security: Web Application Firewalls and DDoS protection • Monito",
+        "page": 8,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://gradelab.io/privacy"
+      }
+    ],
+    "caveat": "Captured documents use different training language: the Privacy Policy says “without explicit consent”; the GDPR page says “NEVER.” Do not silently resolve this difference. Security-page badges include items marked “In progress.”"
+  },
+  {
+    "competitorId": 16,
+    "positions": [
+      {
+        "topic": "Audit evidence",
+        "summary": "Instructure’s DPA directs customers first to existing audit evidence, including its latest SOC 2 Type II report and public ISO 27001 certificate.",
+        "quote": "Customer will first use all reasonable efforts to satisfy Customer audit needs through (a) copies of Instructure’s most recently completed SOC-2 Type II audit report, its public ISO 27001 certificate;",
+        "page": 28,
+        "sourceTitle": "Data Processing Addendum | Policy | Instructure",
+        "sourceUrl": "https://www.instructure.com/policies/data-processing-addendum"
+      },
+      {
+        "topic": "Student privacy",
+        "summary": "The product policy lets parents and educators request review, deletion or an end to collection of children’s information.",
+        "quote": "Parents and educators may review information collected from children, request deletion of this information, or request no further collection or use of this information by contacting us at privacy@instructure.com or submitting a help desk ticket through our Products.",
+        "page": 12,
+        "sourceTitle": "Instructure Product Privacy Policy",
+        "sourceUrl": "https://www.instructure.com/policies/product-privacy-policy"
+      }
+    ],
+    "caveat": "Canvas is covered by Instructure parent/product materials; apply the specific agreement and product scope rather than assuming every Instructure product has identical terms."
+  },
+  {
+    "competitorId": 17,
+    "positions": [
+      {
+        "topic": "Student privacy",
+        "summary": "D2L says it acts as a FERPA school official and processes education-record data solely for educational institutions.",
+        "quote": "D2L acts as a “school official” under FERPA and processes this data solely on behalf of educational institutions",
+        "page": 5,
+        "sourceTitle": "Privacy Notice",
+        "sourceUrl": "https://www.d2l.com/legal/privacy-notice/"
+      },
+      {
+        "topic": "Security",
+        "summary": "D2L’s notice specifies TLS 1.2+ in transit and AES-256 at rest, plus role-based access and MFA.",
+        "quote": "Encryption: Data encrypted in transit (TLS 1.2+) and at rest (AES-256) Access controls: Role-based access control (RBAC), multi-factor authentication (MFA)",
+        "page": 13,
+        "sourceTitle": "Privacy Notice",
+        "sourceUrl": "https://www.d2l.com/legal/privacy-notice/"
+      },
+      {
+        "topic": "Retention & rights",
+        "summary": "D2L directs enterprise-user deletion requests to the user’s organization.",
+        "quote": "To request deletion of your data, contact your organization.",
+        "page": 9,
+        "sourceTitle": "Privacy Notice",
+        "sourceUrl": "https://www.d2l.com/legal/privacy-notice/"
+      }
+    ]
+  },
+  {
+    "competitorId": 18,
+    "positions": [
+      {
+        "topic": "AI training",
+        "summary": "CourseAssist says customer data is not used to train third-party AI models.",
+        "quote": "In particular, your data is not used to train third-party AI models.",
+        "page": 2,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://courseassistai.com/privacy.html"
+      },
+      {
+        "topic": "Data use",
+        "summary": "For school/university provision, CourseAssist describes a FERPA school-official role limited to authorized educational purposes and institutional direction.",
+        "quote": "If CourseAssist is provided to you through a school or university, we handle student personal data as a “School Official” under FERPA, meaning we use student information only for authorized educational purposes and under the direction of the educational institution.",
+        "page": 3,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://courseassistai.com/privacy.html"
+      },
+      {
+        "topic": "Security",
+        "summary": "CourseAssist specifies TLS 1.3 for network communications and AES-256 for stored personal data.",
+        "quote": "All network communications are encrypted using Transport Layer Security (TLS) 1.3, and personal data is stored in encrypted form using AES-256 encryption.",
+        "page": 3,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://courseassistai.com/privacy.html"
+      }
+    ]
+  },
+  {
+    "competitorId": 19,
+    "positions": [
+      {
+        "topic": "Data use",
+        "summary": "Crowdmark’s prohibition on third-party promotional sale, rental, licensing or trading of personal information has an express-consent exception.",
+        "quote": "How Crowdmark Shares Your Personal Information Crowdmark will not sell, rent, license, or trade your personal information with third parties for their own direct promotional or marketing use unless Crowdmark receives your express consent to do so.",
+        "page": 4,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://www.crowdmark.com/privacy/"
+      },
+      {
+        "topic": "Retention & rights",
+        "summary": "On proper cancellation, Crowdmark undertakes reasonable efforts to delete account content promptly, subject to granted licences.",
+        "quote": "Crowdmark will, subject to any licences granted hereunder, cancel your account immediately and Crowdmark will use reasonable efforts to delete all Content uploaded, posted or submitted to the Services from your account promptly after cancellation.",
+        "page": 12,
+        "sourceTitle": "Terms of Service",
+        "sourceUrl": "https://www.crowdmark.com/tos/"
+      }
+    ]
+  },
+  {
+    "competitorId": 20,
+    "positions": [
+      {
+        "topic": "Data use",
+        "summary": "Class Companion says teacher/student personal information is not rented, sold, exchanged or used for advertising.",
+        "quote": "How we share your personal information We do not rent, sell, or exchange teacher or student personal information to any third party or use such personal information for advertising purposes.",
+        "page": 5,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://classcompanion.com/privacy"
+      },
+      {
+        "topic": "AI training",
+        "summary": "Its no-training statement specifically covers data from Google Workspace APIs; it should not be broadened beyond that scope.",
+        "quote": "Google Workspace APIs are not used to develop, improve, or train generalized AI and/or ML models.",
+        "page": 5,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://classcompanion.com/privacy"
+      },
+      {
+        "topic": "Security",
+        "summary": "The security page attributes ISO/PCI/SOC credentials to the hosting environment’s data centers.",
+        "quote": "The environment that hosts the Class Companion services maintains multiple certifications for its data centers, including ISO 27001 compliance, PCI Certification, and SOC attestations.",
+        "page": 8,
+        "sourceTitle": "Security",
+        "sourceUrl": "https://classcompanion.com/security"
+      }
+    ],
+    "caveat": "Hosting-provider credentials are not represented here as independently verified certification of Class Companion itself."
+  },
+  {
+    "competitorId": 21,
+    "positions": [
+      {
+        "topic": "AI training",
+        "summary": "ExamAI’s Data Policy says information sent to OpenAI is not used to train OpenAI models under commercial terms.",
+        "quote": "Data sent to OpenAI is not used to train their models under current commercial terms",
+        "page": 9,
+        "sourceTitle": "Data Policy",
+        "sourceUrl": "https://www.examai.ai/data-policy"
+      },
+      {
+        "topic": "Student privacy",
+        "summary": "ExamAI says students under 13 may use it only through a school or with parental consent, as required by COPPA.",
+        "quote": "Students under 13 may use our service only through their school or with parental consent, as required by COPPA (Children's Online Privacy Protection Act).",
+        "page": 4,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://www.examai.ai/privacy-policy"
+      }
+    ],
+    "caveat": "The archive contains provider-specific statements, including OpenAI in the Data Policy and Google Cloud in the Privacy Policy. This summary does not infer one universal hosting or AI arrangement."
+  },
+  {
+    "competitorId": 22,
+    "positions": [
+      {
+        "topic": "AI training",
+        "summary": "GoGrade says assessment content is processed to generate results and does not train external AI models.",
+        "quote": "Assessment content is processed to generate results and is not used to train external AI models.",
+        "page": 5,
+        "sourceTitle": "Security",
+        "sourceUrl": "https://gograde.ai/security"
+      },
+      {
+        "topic": "Data use",
+        "summary": "GoGrade identifies the institution as controller/Data Fiduciary and itself as processor acting on instructions.",
+        "quote": "Your institution acts as the Data Fiduciary (controller); we act as a Data Processor handling data on your instructions.",
+        "page": 6,
+        "sourceTitle": "Security",
+        "sourceUrl": "https://gograde.ai/security"
+      },
+      {
+        "topic": "Data processing",
+        "summary": "GoGrade offers an institutional DPA covering roles, security, subprocessors and data handling.",
+        "quote": "Data Processing Agreement (DPA) We can sign a DPA that sets out roles, security obligations, subprocessors, and data-handling commitments for your institution.",
+        "page": 6,
+        "sourceTitle": "Security",
+        "sourceUrl": "https://gograde.ai/security"
+      }
+    ]
+  },
+  {
+    "competitorId": 23,
+    "positions": [
+      {
+        "topic": "AI training",
+        "summary": "Frizzle says student work and customer data do not train its foundation models; providers are contractually barred from training theirs on that data.",
+        "quote": "Student work and other Customer Data are not used to train Frizzle’s foundation models, and our model providers are contractually prohibited from using that data to train their models.",
+        "page": 4,
+        "sourceTitle": "FERPA",
+        "sourceUrl": "https://www.frizzle.com/privacy"
+      },
+      {
+        "topic": "Data use",
+        "summary": "Frizzle describes itself as a FERPA school official processing student data only for school-authorized educational purposes.",
+        "quote": "We process student data as a school official under FERPA, only for the school, and only for the educational purposes the school authorized.",
+        "page": 3,
+        "sourceTitle": "FERPA",
+        "sourceUrl": "https://www.frizzle.com/privacy"
+      },
+      {
+        "topic": "Hosting & transfers",
+        "summary": "For EEA/UK/Swiss personal data, Frizzle says a signed DPA and appropriate transfer tools such as SCCs are required.",
+        "quote": "If we process personal data of individuals in the EEA, UK, or Switzerland, we will do so under a signed DPA with appropriate transfer tools (such as Standard Contractual Clauses).",
+        "page": 6,
+        "sourceTitle": "FERPA",
+        "sourceUrl": "https://www.frizzle.com/privacy"
+      }
+    ]
+  },
+  {
+    "competitorId": 24,
+    "positions": [
+      {
+        "topic": "AI training",
+        "summary": "Pensive’s policy permits anonymised data to train third-party AI models.",
+        "quote": "We may use anonymized data (not identifiable or recoverable as your personal information) to train third party artificial intelligence (AI) models.",
+        "page": 3,
+        "sourceTitle": "Privacy Policies",
+        "sourceUrl": "https://www.pensive.com/schools/privacy-policy"
+      },
+      {
+        "topic": "Hosting & transfers",
+        "summary": "Pensive’s terms state that services are hosted in the United States.",
+        "quote": "Please be advised the Services are hosted in the United States.",
+        "page": 10,
+        "sourceTitle": "Terms of Service",
+        "sourceUrl": "https://www.pensive.com/schools/terms-of-service"
+      },
+      {
+        "topic": "Student privacy",
+        "summary": "Pensive says it does not knowingly collect or solicit data from, or market to, under-18s.",
+        "quote": "We do not knowingly collect, solicit data from, or market to children under 18 years of age, nor do we knowingly sell such personal information.",
+        "page": 4,
+        "sourceTitle": "Privacy Policies",
+        "sourceUrl": "https://www.pensive.com/schools/privacy-policy"
+      }
+    ]
+  },
+  {
+    "competitorId": 25,
+    "positions": [
+      {
+        "topic": "AI training",
+        "summary": "MarkBot says papers do not train its models and cites Google enterprise API terms as prohibiting training on submitted data.",
+        "quote": "We do not sell your data. We do not use your papers to train models.",
+        "page": 2,
+        "sourceTitle": "Privacy",
+        "sourceUrl": "https://www.markbot.org/privacy"
+      },
+      {
+        "topic": "Hosting & retention",
+        "summary": "MarkBot states uploaded papers are in Supabase’s EU region, with user deletion available; marking results remain until deletion or account closure.",
+        "quote": "Uploaded exam papers are stored in Supabase (EU region) and are tied to your account. You can delete them at any time. Marking results are retained until you delete them or close your account.",
+        "page": 2,
+        "sourceTitle": "Privacy",
+        "sourceUrl": "https://www.markbot.org/privacy"
+      }
+    ]
+  },
+  {
+    "competitorId": 26,
+    "positions": [
+      {
+        "topic": "AI training",
+        "summary": "Top Marks requires the customer’s prior written permission before using customer/student data for AI training, fine-tuning or model improvement.",
+        "quote": "Top Marks shall not use Customer Data, including Student Data, to train or fine-tune any AI model, or otherwise for the improvement of AI models, without Customer's prior written permission.",
+        "page": 13,
+        "sourceTitle": "Terms and Conditions",
+        "sourceUrl": "https://www.topmarks.ai/terms"
+      },
+      {
+        "topic": "Hosting & transfers",
+        "summary": "Top Marks says student and staff data processed for schools is hosted in the UK and EU.",
+        "quote": "Student and staff data processed on behalf of schools is hosted in the United Kingdom and the European Union.",
+        "page": 4,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://www.topmarks.ai/privacy"
+      },
+      {
+        "topic": "Retention & rights",
+        "summary": "Top Marks ties school-data deletion to the licence period, contract/instruction deadlines and a 60-day export period; the precise timetable is in its DPA.",
+        "quote": "It is retained for the school's Licence Period and then returned or deleted in accordance with paragraph 11 of Schedule 1 to our Platform Terms and Conditions (deletion within 90 days of the end of the contract, or within 30 days of the school's instruction, after the school's 60-day export period), or earlier on the school's instruction.",
+        "page": 4,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://www.topmarks.ai/privacy"
+      }
+    ]
+  },
+  {
+    "competitorId": 27,
+    "positions": [
+      {
+        "topic": "Hosting & transfers",
+        "summary": "Youdao’s AI-platform policy stores personal information collected/generated in mainland China there, with exceptions for law, consent or cross-border service needs.",
+        "quote": "我们在中华人民共和国境内运营中收集和产生的个人信息，存储在中国境内。以下情形除外： 1、法律法规有明确规定； 2、获得您的授权同意； 3、您使用的有道服务涉及跨境，且需要向境外提供您的个人信息的 ；",
+        "page": 9,
+        "sourceTitle": "Youdao AI platform Privacy Policy",
+        "sourceUrl": "https://ai.youdao.com/DOCSIRMA/html/agreement/privacy/ydyszc/index.html"
+      },
+      {
+        "topic": "Student privacy",
+        "summary": "The policy asks under-14 users to read the children’s rules with their guardian and seek consent/guidance before use or submitting personal information.",
+        "quote": "如果您是未满十四周岁的未成年人，请您通知您的监 护人共同阅读并接受我们的《有道儿童个人信息保护规则及监护人须知》并在您使用有道服务、提 交个人信息之前，寻求其同意和指导。",
+        "page": 11,
+        "sourceTitle": "Youdao AI platform Privacy Policy",
+        "sourceUrl": "https://ai.youdao.com/DOCSIRMA/html/agreement/privacy/ydyszc/index.html"
+      }
+    ],
+    "caveat": "English summaries translate Chinese archive text. Youdao AI-platform, speech-SDK, children’s rules and dictionary policy have distinct scopes; no product-wide GDPR conclusion is inferred."
+  },
+  {
+    "competitorId": 28,
+    "positions": [
+      {
+        "topic": "AI training",
+        "summary": "Copyleaks says submitted information trains its models; direct customers can opt out via support and enterprise customers can elect an opt-out for their users.",
+        "quote": "We also use this information to train our models. If you are a direct customer, you may opt out of our use of your information to train our models by contacting customer support at [email protected]. If you are a user of our Enterprise Customers, our Enterprise Customer may elect to opt out of our use of the information to train our models.",
+        "page": 4,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://copyleaks.com/privacy-policy"
+      },
+      {
+        "topic": "Data processing",
+        "summary": "Copyleaks describes enterprise customer data as processed under commercial agreements and DPAs, in a processor capacity.",
+        "quote": "which we process on behalf of our Enterprise Customers (“Customer Data”) in our capacity as a “data processor” (or equivalent term under applicable data protection laws) in accordance with the instructions governed by commercial agreements and Data Processing Addenda we have in place with our Enterprise Customers.",
+        "page": 2,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://copyleaks.com/privacy-policy"
+      }
+    ],
+    "caveat": "These are Copyleaks parent/service documents in the AI Grader archive; commercial agreements and opt-out settings matter. Do not recast this as a blanket no-training policy."
+  },
+  {
+    "competitorId": 29,
+    "positions": [
+      {
+        "topic": "Hosting & transfers",
+        "summary": "Cognii says its servers holding information are located in the United States.",
+        "quote": "Keeping information safe: Cognii maintains strict administrative, technical and physical procedures to protect information stored in our servers, which are located in the United States.",
+        "page": 3,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://www.cognii.com/privacy-policy"
+      },
+      {
+        "topic": "Retention & rights",
+        "summary": "When Cognii is a processor, it directs rights requests to the teacher or school.",
+        "quote": "If Cognii is acting as a Data Processor, we will recommend that you contact your teacher or your school.",
+        "page": 4,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://www.cognii.com/privacy-policy"
+      }
+    ]
+  },
+  {
+    "competitorId": 30,
+    "positions": [
+      {
+        "topic": "AI training",
+        "summary": "Kahoot! says platform personal data neither trains/refines LLMs nor may be used by its AI vendors for that purpose.",
+        "quote": "Kahoot! does not use personal data collected through our platform to train or refine large language models (LLMs), and does not allow our Artificial Intelligence (AI) vendors to do so either.",
+        "page": 14,
+        "sourceTitle": "Privacy Notice",
+        "sourceUrl": "https://trust.kahoot.com/privacy-policy/"
+      },
+      {
+        "topic": "Data use",
+        "summary": "Kahoot! says it does not sell personal information and never shares or sells student data for marketing.",
+        "quote": "Regardless of the above, Kahoot! does not sell Personal Information and we will never share or sell Student Data for marketing purposes.",
+        "page": 17,
+        "sourceTitle": "Privacy Notice",
+        "sourceUrl": "https://trust.kahoot.com/privacy-policy/"
+      },
+      {
+        "topic": "Hosting & transfers",
+        "summary": "Kahoot!’s DPA requires appropriate SCCs for subprocessors that may process customer data outside the EU/EEA/UK.",
+        "quote": "Kahoot! shall enter into written agreement including appropriate SCCs with all of Kahoot!’s Sub-Processors that might Process Customer Data outside the EU/EEA/UK, and shall require that its Sub-Processors abide by and Process Data in compliance with the SCCs.",
+        "page": 36,
+        "sourceTitle": "DPA | Kahoot! Trust Center K! Kahoot!",
+        "sourceUrl": "https://trust.kahoot.com/dpa/"
+      }
+    ]
+  },
+  {
+    "competitorId": 31,
+    "positions": [
+      {
+        "topic": "Data sharing",
+        "summary": "edaira lists hosting, payment, OCR and AI providers among necessary contractual recipients; OCR/AI use includes providing and improving services.",
+        "quote": "Drittanbieter wie OCR- und KI-Dienste: Zur Bereitstellung und Verbesserung der angebotenen Dienste",
+        "page": 13,
+        "sourceTitle": "Datenschutz",
+        "sourceUrl": "https://edaira.ai/legal-pages/datenschutz"
+      },
+      {
+        "topic": "Retention & rights",
+        "summary": "edaira’s notice offers access, correction, blocking and deletion requests via its contact address.",
+        "quote": "Sie haben das Recht, Auskunft über Ihre bei uns gespeicherten personenbezogenen Daten zu erhalten, sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten.",
+        "page": 14,
+        "sourceTitle": "Datenschutz",
+        "sourceUrl": "https://edaira.ai/legal-pages/datenschutz"
+      }
+    ],
+    "caveat": "English summaries translate the captured German text. The brief notice is not treated as a complete product DPA or an AI no-training commitment."
+  },
+  {
+    "competitorId": 32,
+    "positions": [
+      {
+        "topic": "Published claim",
+        "summary": "Gradie’s homepage claims alignment with FERPA, COPPA and GDPR, plus end-to-end encryption and anonymised sharing.",
+        "quote": "Gradie is fully aligned with global education data protection laws, including FERPA, COPPA, and GDPR, employing end-to-end encryption and anonymized data sharing.",
+        "page": 3,
+        "sourceTitle": "Homepage privacy and security statements",
+        "sourceUrl": "https://gradie.ai/"
+      },
+      {
+        "topic": "Human oversight",
+        "summary": "The homepage advertises a human-in-the-loop approach for accuracy and quality assurance.",
+        "quote": "Human-in-the-Loop for Accuracy and Quality Assurance",
+        "page": 3,
+        "sourceTitle": "Homepage privacy and security statements",
+        "sourceUrl": "https://gradie.ai/"
+      }
+    ],
+    "caveat": "Statement-only coverage: homepage assertions were captured; no standalone policy or independently verified certification is inferred."
+  },
+  {
+    "competitorId": 33,
+    "positions": [
+      {
+        "topic": "Data processing",
+        "summary": "Zengrade’s Article 28 agreement identifies Zengrade as processor and the customer as controller, acting on the controller’s instructions.",
+        "quote": "Der Auftragsverarbeiter verarbeitet die personenbezogenen Daten während der Dauer des Leistungsvertrags im Auftrag und nur nach Weisung des Verantwortlichen.",
+        "page": 2,
+        "sourceTitle": "Auftragsverarbeitungsvertrag",
+        "sourceUrl": "https://zengrade.notion.site/Auftragsverarbeitungsvertrag-a5c85050bd104bed8a0469db826b20b5?pvs=25"
+      },
+      {
+        "topic": "Hosting & transfers",
+        "summary": "Zengrade’s DPA normally places processing in the EU/EEA, permitting third-country transfers only if GDPR Chapter V conditions are met.",
+        "quote": "Jede Übermittlung der Kundendaten in ein Land außerhalb von EU/EWR („Drittland“) erfolgt nur, wenn die besonderen Voraussetzungen der Art. 44 ff. DSGVO erfüllt sind.",
+        "page": 6,
+        "sourceTitle": "Auftragsverarbeitungsvertrag",
+        "sourceUrl": "https://zengrade.notion.site/Auftragsverarbeitungsvertrag-a5c85050bd104bed8a0469db826b20b5?pvs=25"
+      }
+    ],
+    "caveat": "English summaries translate German source text. Generic AI definitions in the privacy notice are not treated as a specific promise about training on student work."
+  },
+  {
+    "competitorId": 34,
+    "positions": [
+      {
+        "topic": "Data processing",
+        "summary": "Socrative/Showbie describes itself as processor for student data, with the contracting school board, institution or teacher as controller.",
+        "quote": "However, we are a Data Processor of this Personal Data on behalf of the students’ school board, educational institution or teacher who has contracted with us, and that school board, educational institution, or teacher is the Data Controller.",
+        "page": 5,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://www.socrative.com/privacy"
+      },
+      {
+        "topic": "Hosting & transfers",
+        "summary": "Showbie says transfers to countries without adequate protection require safeguards such as EU SCCs.",
+        "quote": "Showbie will not transfer Personal Data to third countries that do not offer adequate protection unless appropriate safeguards are established, such as EU Standard Contractual Clauses.",
+        "page": 6,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://www.socrative.com/privacy"
+      }
+    ]
+  },
+  {
+    "competitorId": 35,
+    "positions": [
+      {
+        "topic": "Data use",
+        "summary": "neoPat/iamneo’s privacy policy states that personal data is never sold.",
+        "quote": "We never sell your personal data.",
+        "page": 3,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://iamneo.ai/privacy-policy/"
+      },
+      {
+        "topic": "Retention & rights",
+        "summary": "The policy offers access, correction, communication opt-out and deletion requests, subject to legal retention requirements.",
+        "quote": "User Rights Users may: Request access to their data Request corrections Request deletion (except where legally required) Request to stop communication 9.",
+        "page": 3,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://iamneo.ai/privacy-policy/"
+      }
+    ]
+  },
+  {
+    "competitorId": 36,
+    "positions": [
+      {
+        "topic": "Retention & rights",
+        "summary": "Eklavvya states that proctoring media and uploaded identity proof are retained for 30 days, then permanently deleted.",
+        "quote": "Proctoring media and identity documents – 30 days. Audio, images and video captured during proctored examinations, together with any identity proof uploaded by a candidate for verification purposes, are retained for a period of 30 days from the date of the examination.",
+        "page": 4,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://www.eklavvya.com/privacy-policy/"
+      },
+      {
+        "topic": "Retention & rights",
+        "summary": "Uploaded answer PDFs leave the live system by 180 days or earlier upon institutional handover; archived evaluation data, excluding PDFs, can remain up to two years.",
+        "quote": "In every case, uploaded answer documents are removed from the live system no later than 180 days after upload.",
+        "page": 5,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://www.eklavvya.com/privacy-policy/"
+      },
+      {
+        "topic": "Retention & rights",
+        "summary": "Archived assessment data depends on an active subscription: expiry/non-renewal triggers deletion after 30 days, even before the three-year archive term ends.",
+        "quote": "Where your institution’s subscription expires or is not renewed, archived data belonging to your institution will be retained for 30 days from the expiry date and then permanently deleted, even where the 3-year archive period has not elapsed.",
+        "page": 9,
+        "sourceTitle": "Terms of Use",
+        "sourceUrl": "https://www.eklavvya.com/terms-of-use/"
+      }
+    ],
+    "caveat": "Different schedules apply to proctoring, logs, answer PDFs and assessment/evaluation archives. The policy says contractual retention periods and legal retention obligations may override default schedules."
+  },
+  {
+    "competitorId": 37,
+    "positions": [
+      {
+        "topic": "AI training",
+        "summary": "Pear’s product policy prohibits sharing personal student information with providers to train their AI models for their own purposes.",
+        "quote": "We do not share Personal Student Information with third-party service providers for training of their artificial intelligence models for their own purposes.",
+        "page": 6,
+        "sourceTitle": "Product Privacy Policy",
+        "sourceUrl": "https://www.peardeck.com/policies/privacy-policy-for-product-users"
+      },
+      {
+        "topic": "Retention & rights",
+        "summary": "Pear says personal student information is retained as directed by the school, with deletion or transfer handled on documented instructions.",
+        "quote": "We retain Personal Student Information as directed by the School:",
+        "page": 7,
+        "sourceTitle": "Product Privacy Policy",
+        "sourceUrl": "https://www.peardeck.com/policies/privacy-policy-for-product-users"
+      }
+    ],
+    "caveat": "Pear Assessment/Edulastic is represented by Pear parent/product documents. The quoted training restriction is specifically about third-party providers’ own purposes."
+  },
+  {
+    "competitorId": 38,
+    "positions": [
+      {
+        "topic": "Security",
+        "summary": "GPTZero reports SOC 2 Type II compliance on its security page; the archive preserves this vendor claim.",
+        "quote": "GPTZero's Security Monitoring SOC 2 We are very proud to share that we are SOC 2 Type II compliant.",
+        "page": 2,
+        "sourceTitle": "Learn more about our privacy, security and compliance",
+        "sourceUrl": "https://gptzero.me/privacy-and-security"
+      },
+      {
+        "topic": "Data use",
+        "summary": "GPTZero’s privacy policy says it will not sell or share personal information belonging to visitors, users and other consumers.",
+        "quote": "We will not sell or share personal information in the future belonging to website visitors, users, and other consumers.",
+        "page": 11,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://gptzero.me/privacy-policy.html"
+      }
+    ]
+  },
+  {
+    "competitorId": 39,
+    "positions": [
+      {
+        "topic": "Data use",
+        "summary": "Progressay’s terms describe it as controller of personal data used to provide services and goods.",
+        "quote": "We are a Data Controller of the Personal Data we Process in providing the Services and Goods to you.",
+        "page": 14,
+        "sourceTitle": "Terms and Conditions",
+        "sourceUrl": "https://progressay.com/terms-conditions"
+      },
+      {
+        "topic": "Retention & rights",
+        "summary": "Its notice ties retention to stated purposes or a deletion request, unless a longer period is required or permitted by law.",
+        "quote": "Unless a longer retention period is required or permitted by law, we will only hold your Data on our systems for the period necessary to fulfil the purposes outlined in this privacy policy or until you request that the Data be deleted.",
+        "page": 5,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://progressay.com/privacy-policy"
+      }
+    ]
+  },
+  {
+    "competitorId": 40,
+    "positions": [
+      {
+        "topic": "Proctoring & biometrics",
+        "summary": "Zhihuishu’s policy says, where the course provider requires it, pre-exam facial images go to Baidu for identity verification.",
+        "quote": "如课程提供方要求，我们会在考试开始前收集您的人脸信息（人脸图片），并将其向北京百度网讯科技有限公司（联系 方式：400-920-8999）提供，用于验证您身份的真实性，以确认是您本人参加考试。",
+        "page": 4,
+        "sourceTitle": "Platform Privacy Policy",
+        "sourceUrl": "https://www.zhihuishu.com/columnsapp/student/UserPrivacyProtocol/PrivacyPolicy1.html"
+      },
+      {
+        "topic": "Proctoring & biometrics",
+        "summary": "During online exams, the policy describes continuous capture of the face view and answer webpage and disclosure to the course provider.",
+        "quote": "我们会在考试过程中全程收集您的脸部画面和网页答题界面，并将该等个人信息提供给课程提供方，供其核查是否考生 本人参加考试及考试过程的真实性。",
+        "page": 4,
+        "sourceTitle": "Platform Privacy Policy",
+        "sourceUrl": "https://www.zhihuishu.com/columnsapp/student/UserPrivacyProtocol/PrivacyPolicy1.html"
+      },
+      {
+        "topic": "Hosting & transfers",
+        "summary": "Zhihuishu generally stores personal information collected/generated in mainland China there, unless otherwise agreed or provided by law.",
+        "quote": "除非另有约定或法律另有规定，我们在中华人民共和国境内收集和产生的个人信息将储存在中华人民共和国境内。",
+        "page": 8,
+        "sourceTitle": "Platform Privacy Policy",
+        "sourceUrl": "https://www.zhihuishu.com/columnsapp/student/UserPrivacyProtocol/PrivacyPolicy1.html"
+      }
+    ],
+    "caveat": "English summaries translate the supplied Chinese policy. The stated practices are not a finding of compliance with any jurisdiction’s exam-grading rules."
+  },
+  {
+    "competitorId": 41,
+    "positions": [
+      {
+        "topic": "Data minimisation",
+        "summary": "Markr’s homepage advertises anonymising student responses for unbiased grading.",
+        "quote": "anonymising student responses for unbiased grading",
+        "page": 2,
+        "sourceTitle": "Homepage privacy and security statements",
+        "sourceUrl": "https://www.testmarkr.com/"
+      },
+      {
+        "topic": "Human oversight",
+        "summary": "Markr says instructors can edit its feedback suggestions before sharing them with students.",
+        "quote": "You can always modify these suggestions to make sure the feedback you send to the student lives up to your standards.",
+        "page": 3,
+        "sourceTitle": "Homepage privacy and security statements",
+        "sourceUrl": "https://www.testmarkr.com/"
+      }
+    ],
+    "caveat": "Statement-only coverage: homepage claims were captured, not a standalone privacy policy or contractual legal position."
+  },
+  {
+    "competitorId": 42,
+    "positions": [
+      {
+        "topic": "AI training",
+        "summary": "MathGrader says AI providers are contractually barred from retaining or training on student data, or using it beyond requested educational services.",
+        "quote": "These providers are contractually prohibited from retaining, training on, or using student data for advertising, profiling, or any purpose other than delivering the requested educational services.",
+        "page": 2,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://www.mathgrader.ai/legal/privacy"
+      },
+      {
+        "topic": "Data use",
+        "summary": "MathGrader describes a FERPA school-official role acting solely for schools and districts.",
+        "quote": "We act as a \"school official\" with a legitimate educational interest, processing data solely on behalf of schools and districts.",
+        "page": 2,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://www.mathgrader.ai/legal/privacy"
+      },
+      {
+        "topic": "Retention & rights",
+        "summary": "Schools/districts may request export or deletion of all student data.",
+        "quote": "Schools/districts may request export or deletion of all student data.",
+        "page": 3,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://www.mathgrader.ai/legal/privacy"
+      }
+    ]
+  },
+  {
+    "competitorId": 43,
+    "positions": [
+      {
+        "topic": "Hosting & transfers",
+        "summary": "Fuxam’s software security page says it operates exclusively in European data centers.",
+        "quote": "Fuxam is operated exclusively in European data centers.",
+        "page": 11,
+        "sourceTitle": "More about data security",
+        "sourceUrl": "https://www.fuxam.com/en/gdpr-and-data-security"
+      },
+      {
+        "topic": "Security",
+        "summary": "Fuxam attributes ISO 27001, SOC 2 and BSI C5 credentials to the EU data centers it uses and describes annual staff training.",
+        "quote": "All employees receive training on data protection and information security at least once a year, and the EU data centers used are certified according to ISO 27001, SOC 2, and C5 (BSI).",
+        "page": 13,
+        "sourceTitle": "More about data security",
+        "sourceUrl": "https://www.fuxam.com/en/gdpr-and-data-security"
+      }
+    ],
+    "caveat": "Software privacy/security statements are kept separate from its website/social-media policy. Data-center credentials are not presented as an independently verified Fuxam certification."
+  },
+  {
+    "competitorId": 44,
+    "positions": [
+      {
+        "topic": "Data minimisation",
+        "summary": "KorrekturKumpel claims its cryptographic design makes re-identification by the vendor technically impossible, leaving identification to teachers.",
+        "quote": "Nur der Lehrkraft ist es möglich, ihre Lernenden zu identifizieren.",
+        "page": 16,
+        "sourceTitle": "Datenschutz für Lernende",
+        "sourceUrl": "https://korrekturkumpel.de/students_privacy"
+      },
+      {
+        "topic": "Security",
+        "summary": "The described workflow replaces usernames in the browser before upload; solution text itself is not encrypted in this table.",
+        "quote": "Lösungstexte | Keine (aber Nutzernamen werden VOR Upload ersetzt) | Alle |",
+        "page": 17,
+        "sourceTitle": "Datenschutz für Lernende",
+        "sourceUrl": "https://korrekturkumpel.de/students_privacy"
+      }
+    ],
+    "caveat": "English summaries translate German text. “No processing of learners’ personal data” is the vendor’s legal/technical claim, not an independent finding that its method meets GDPR anonymisation requirements."
+  },
+  {
+    "competitorId": 45,
+    "positions": [
+      {
+        "topic": "AI training",
+        "summary": "TimelyGrader says user content does not train, fine-tune or improve its own AI/ML models.",
+        "quote": "TimelyGrader does not use User Content to train, fine-tune, or otherwise improve its own artificial-intelligence or machine-learning models.",
+        "page": 20,
+        "sourceTitle": "Terms of Service",
+        "sourceUrl": "https://www.timelygrader.ai/terms-of-service"
+      },
+      {
+        "topic": "Security",
+        "summary": "TimelyGrader reports completion of a SOC 2 Type II audit and offers its report on request.",
+        "quote": "Audit completed with Vanta/Sentry Assurance SOC 2 Type II Compliant We’ve successfully completed a SOC 2 Type II audit, demonstrating our commitment to security, availability, and confidentiality.",
+        "page": 13,
+        "sourceTitle": "Accessibility & Data Security",
+        "sourceUrl": "https://www.timelygrader.ai/accessibility-and-security"
+      },
+      {
+        "topic": "Hosting & transfers",
+        "summary": "TimelyGrader’s terms state that the services are hosted in the United States.",
+        "quote": "Please be advised the Services are hosted in the United States.",
+        "page": 21,
+        "sourceTitle": "Terms of Service",
+        "sourceUrl": "https://www.timelygrader.ai/terms-of-service"
+      }
+    ],
+    "caveat": "Its own-model restriction should not be broadened into a universal third-party prohibition: the terms separately permit certain AI-enabled infrastructure features not primarily processing user content."
+  },
+  {
+    "competitorId": 46,
+    "positions": [
+      {
+        "topic": "AI training",
+        "summary": "EnlightenAI says none of its AI providers may train models on data processed on its behalf.",
+        "quote": "No AI provider we use has the right to train models on any data processed on EnlightenAI’s behalf.",
+        "page": 7,
+        "sourceTitle": "Privacy policy",
+        "sourceUrl": "https://enlightenme.ai/privacy-policy"
+      },
+      {
+        "topic": "Retention & rights",
+        "summary": "For a teacher affiliated with an institutional customer, EnlightenAI gives the institution’s direction precedence over the teacher’s account-deletion request.",
+        "quote": "Deletion Requests from Individual Teachers If a teacher is affiliated with an Educational Institution that is a client partner of EnlightenAI and requests deletion of their individual account, we will defer to the Educational Institution on whether to proceed with deletion, with the Educational Institution's direction taking precedence.",
+        "page": 9,
+        "sourceTitle": "Privacy policy",
+        "sourceUrl": "https://enlightenme.ai/privacy-policy"
+      }
+    ]
+  },
+  {
+    "competitorId": 47,
+    "positions": [
+      {
+        "topic": "Plan-specific privacy",
+        "summary": "Edexia says institutional and paid-subscriber data, including student data, is not used for model training or product development.",
+        "quote": "We will not use institutional or paid-subscriber data — including their students’ data — for model training, product development, or any purpose beyond delivering the Services to that organisation.",
+        "page": 8,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://edexia.com/privacy/privacy-policy"
+      },
+      {
+        "topic": "Plan-specific privacy",
+        "summary": "Public demo submissions instead grant a licence including AI training; Edexia says it takes reasonable steps to de-identify and aggregate them.",
+        "quote": "We will take reasonable steps to de-identify and aggregate demo submission data before using it for training or improvement purposes, so that it is not personally attributable to you.",
+        "page": 8,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://edexia.com/privacy/privacy-policy"
+      },
+      {
+        "topic": "Plan-specific privacy",
+        "summary": "Free individual student accounts have training-data terms, while free teacher accounts receive institutional/paid-account protections.",
+        "quote": "These terms apply exclusively to free individual student accounts. Free teacher accounts are not subject to these training-data terms and receive the same data-ownership protections as institutional and paid-subscriber accounts.",
+        "page": 9,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://edexia.com/privacy/privacy-policy"
+      },
+      {
+        "topic": "Retention & rights",
+        "summary": "Edexia’s retention policy says a formal organizational deletion request triggers another 12 months of retention for records, legal compliance and security.",
+        "quote": "Should an organisation submit a formal request for data deletion, Edexia will maintain the data for an additional 12 months, strictly for record-keeping, legal compliance, and security purposes.",
+        "page": 19,
+        "sourceTitle": "Data Retention Policy",
+        "sourceUrl": "https://edexia.com/privacy/data-retention-policy"
+      }
+    ],
+    "caveat": "Training permissions differ among institutions/paid accounts, free teachers, free individual students and anonymous public-demo submissions. Existing de-identified model-incorporated data may persist after a free student’s deletion request."
+  },
+  {
+    "competitorId": 48,
+    "positions": [
+      {
+        "topic": "Data use",
+        "summary": "Kangaroos AI says it does not sell information; operational providers may have limited access under its direction.",
+        "quote": "We do not sell your information to third parties. However, certain third-party services integral to our operations, such as email and hosting services, may have limited access to your information, strictly for business purposes under our direction.",
+        "page": 2,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://www.kangaroos.ai/privacy-policy"
+      },
+      {
+        "topic": "Retention & rights",
+        "summary": "Kangaroos AI accepts deletion requests unless it must retain the information by law.",
+        "quote": "Deletion: You may request the deletion of your personal information, unless we are required to retain it by law.",
+        "page": 3,
+        "sourceTitle": "Privacy Policy",
+        "sourceUrl": "https://www.kangaroos.ai/privacy-policy"
+      }
+    ]
+  },
+  {
+    "competitorId": 49,
+    "positions": [
+      {
+        "topic": "AI training",
+        "summary": "StarGrader states that student data is never sold, shared for advertising or used to train AI models.",
+        "quote": "No Data Selling Student data is never sold, shared for advertising, or used for AI model training.",
+        "page": 4,
+        "sourceTitle": "Data Privacy & Security",
+        "sourceUrl": "https://stargrader.com/data-privacy-security-plan.html"
+      },
+      {
+        "topic": "Retention & rights",
+        "summary": "StarGrader says all student-data copies in Firestore/Cloud Storage are securely deleted on DPA termination or written request.",
+        "quote": "7 Secure Destruction Practices Upon termination of the DPA or upon written request, StarGrader will securely delete all student data from its systems, including all copies stored in Google Cloud Firestore and Google Cloud Storage.",
+        "page": 5,
+        "sourceTitle": "Data Privacy & Security",
+        "sourceUrl": "https://stargrader.com/data-privacy-security-plan.html"
+      }
+    ],
+    "caveat": "The archive includes broad compliance/badge claims and subprocessor credentials; these are not treated as independent certification of StarGrader."
+  },
+  {
+    "competitorId": 50,
+    "positions": [
+      {
+        "topic": "Data use",
+        "summary": "ETS says it does not sell consumer information for money, but allows legally permitted sharing including online advertising programs.",
+        "quote": "While we do not sell consumer information for monetary consideration, your information may be also be shared as permitted by law, such as with third parties as part of our online advertising programs.",
+        "page": 4,
+        "sourceTitle": "Privacy & Security",
+        "sourceUrl": "https://www.ets.org/legal/privacy.html"
+      },
+      {
+        "topic": "Retention & rights",
+        "summary": "ETS states a 30-day deletion response unless law or a legitimate interest requires retaining information.",
+        "quote": "Unless we are required by law or have a legitimate interest to retain your information, we will delete it within 30 days of your request.",
+        "page": 14,
+        "sourceTitle": "Privacy & Security",
+        "sourceUrl": "https://www.ets.org/legal/privacy.html"
+      }
+    ],
+    "caveat": "This is ETS’s broad Privacy & Security notice, not a dedicated e-rater training policy. Do not generalize website/registration provisions to every scoring deployment."
+  },
+  {
+    "competitorId": 51,
+    "positions": [
+      {
+        "topic": "Security",
+        "summary": "Microsoft’s Forms-specific page says Forms encrypts data at rest and in transit.",
+        "quote": "Yes, Microsoft Forms is encrypted both at rest and in transit.",
+        "page": 51,
+        "sourceTitle": "Forms Security and Privacy",
+        "sourceUrl": "https://support.microsoft.com/en-us/forms/security-and-privacy-in-microsoft-forms"
+      },
+      {
+        "topic": "Hosting & transfers",
+        "summary": "Forms storage follows tenant geography: EU/EFTA tenants use the EU/EFTA macro region; Australian storage also depends on when Forms was provisioned.",
+        "quote": "European Union (EU) or European Free Trade Association (EFTA) Countries/Regions Macro Region Geography 4 - European Union/EFTA",
+        "page": 52,
+        "sourceTitle": "Forms Data Storage",
+        "sourceUrl": "https://support.microsoft.com/en-us/forms/data-storage-for-microsoft-forms"
+      },
+      {
+        "topic": "Published claim",
+        "summary": "The Forms support page states that Forms meets FERPA and BAA protection standards.",
+        "quote": "Microsoft Forms meets FERPA and BAA protection standards.",
+        "page": 51,
+        "sourceTitle": "Forms Security and Privacy",
+        "sourceUrl": "https://support.microsoft.com/en-us/forms/security-and-privacy-in-microsoft-forms"
+      }
+    ],
+    "caveat": "Forms-specific statements are distinguished from Microsoft’s broad consumer privacy notice and contractual DPA; no independent certification check was performed."
+  },
+  {
+    "competitorId": 52,
+    "positions": [
+      {
+        "topic": "Data use",
+        "summary": "Google says Workspace for Education core services show no ads and do not use personal data collected there for advertising.",
+        "quote": "In den Hauptdiensten von Google Workspace for Education werden keine Werbeanzeigen eingeblendet. Die in den Hauptdiensten erhobenen personenbezogenen Daten werden außerdem nicht für Werbezwecke verwendet.",
+        "page": 3,
+        "sourceTitle": "Google Workspace for Education Privacy Notice",
+        "sourceUrl": "https://workspace.google.com/terms/education_privacy/"
+      },
+      {
+        "topic": "Data processing",
+        "summary": "For Education core services, Google says it receives and processes customer data according to the institution’s instructions.",
+        "quote": "Wir erhalten Kundendaten über die Hauptdienste und verarbeiten sie gemäß den Weisungen der Bildungseinrichtung (der Kundenorganisation).",
+        "page": 3,
+        "sourceTitle": "Google Workspace for Education Privacy Notice",
+        "sourceUrl": "https://workspace.google.com/terms/education_privacy/"
+      },
+      {
+        "topic": "Service-specific privacy",
+        "summary": "Some additional services display ads; Google says primary/secondary Education accounts receive no personalised advertising there.",
+        "quote": "Wenn Sie Ihr Google Workspace for Education-Konto jedoch in der Primar- und Sekundarstufe verwenden, sehen Sie keine personalisierte Werbung, d. h., wir verwenden keine Informationen aus Ihrem Konto oder aus Ihren früheren Aktivitäten für zielgerichtete Werbung.",
+        "page": 4,
+        "sourceTitle": "Google Workspace for Education Privacy Notice",
+        "sourceUrl": "https://workspace.google.com/terms/education_privacy/"
+      }
+    ],
+    "caveat": "English summaries translate the archived German Education notice. Classroom is a core service; Google’s general consumer policy and additional-service rules have different scopes."
+  },
+  {
+    "competitorId": 53,
+    "positions": [
+      {
+        "topic": "Data minimisation",
+        "summary": "Flubaroo/edCode says analytics collect anonymous usage statistics rather than personally identifiable information.",
+        "quote": "no personally identifiable data will be collected in our usage analytics.",
+        "page": 35,
+        "sourceTitle": "Terms of Service & Privacy Policy",
+        "sourceUrl": "https://www.flubaroo.com/tos"
+      },
+      {
+        "topic": "Data access",
+        "summary": "Flubaroo explains its broad Drive permissions as an Apps Script limitation, while saying it normally accesses only the launching file.",
+        "quote": "Other than the case of creating new files for the user in their Drive (such as for shareable reports or print-outs), our tools only access the file from which the script or Add-on is launched.",
+        "page": 35,
+        "sourceTitle": "Terms of Service & Privacy Policy",
+        "sourceUrl": "https://www.flubaroo.com/tos"
+      },
+      {
+        "topic": "Data storage",
+        "summary": "Flubaroo/edCode says it stores no student data outside the end user’s Google Drive account.",
+        "quote": "Because we store no student data outside of the end-user’s Google Drive account, the potential failure of our tools generally poses no privacy risk, but we cannot offer a 100% guarantee of this.",
+        "page": 35,
+        "sourceTitle": "Terms of Service & Privacy Policy",
+        "sourceUrl": "https://www.flubaroo.com/tos"
+      }
+    ],
+    "caveat": "Combined Google Forms + Flubaroo entry. These positions are Flubaroo’s add-on terms; Google consumer and Workspace/Education policies remain separate and depend on the account/service used."
+  },
+  {
+    "competitorId": 54,
+    "positions": [],
+    "caveat": "Links-only coverage. The archive does not contain captured substantive privacy/terms text, so no legal or privacy position is inferred. Graide Network is distinct from Graide within the Inspera entry."
+  },
+  {
+    "competitorId": 55,
+    "positions": [
+      {
+        "topic": "Data use",
+        "summary": "Exam.net describes receipt of student information as a FERPA school official; the school owns and controls it.",
+        "quote": "With respect to FERPA, Exam.net receives Student personal information as a “school official” under Section 99.31 of FERPA for the purpose of providing its Products, and such Student personal information is owned and controlled by the school customer.",
+        "page": 12,
+        "sourceTitle": "Read Our Privacy Policy",
+        "sourceUrl": "https://exam.net/privacy-policy-us"
+      },
+      {
+        "topic": "Student privacy",
+        "summary": "Where parental consent is required for under-18 students, Exam.net assigns collection to the directing educational institution.",
+        "quote": "When students under the age of 18 are directed to use Exam.net by their educational institutions, the verifiable parental consent, if any, for such use shall be provided to and collected by the educational institution attended by the student.",
+        "page": 8,
+        "sourceTitle": "Read Our Privacy Policy",
+        "sourceUrl": "https://exam.net/privacy-policy-non-us"
+      },
+      {
+        "topic": "Retention & rights",
+        "summary": "Exam.net retains registered teacher/staff personal data for 3.5 years from their latest login.",
+        "quote": "Data retention When you are a registered user (teacher, staff), we retain your Personal data for 3.5 years (1275 days) counting from the date of the latest login.",
+        "page": 8,
+        "sourceTitle": "Read Our Privacy Policy",
+        "sourceUrl": "https://exam.net/privacy-policy-non-us"
+      }
+    ],
+    "caveat": "The 3.5-year period applies to registered teacher/staff accounts, not automatically to every exam or student record."
+  }
+]

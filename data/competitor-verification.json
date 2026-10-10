@@ -1,0 +1,588 @@
+{
+  "reviewed_competitors": 55,
+  "captured_documents": 231,
+  "links_only": 5,
+  "pdf_bundles": 55,
+  "all_pdf_files": 61,
+  "individual_source_links": 236,
+  "total_bundle_pages": 1657,
+  "full_policy_entries": 52,
+  "statement_only_entries": [
+    "Gradie",
+    "Markr"
+  ],
+  "link_only_entries": [
+    "Graide Network / Marco Learning"
+  ],
+  "index_links_valid": true,
+  "original_download_hashes_verified": true,
+  "microsoft_dpa_conversion_missing_word_ratio": 0.0015286624203821656,
+  "pdf_text_checks": [
+    {
+      "id": 1,
+      "pages": 29,
+      "short_pages": [],
+      "expected_tokens": 6151,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 10
+    },
+    {
+      "id": 2,
+      "pages": 8,
+      "short_pages": [],
+      "expected_tokens": 1574,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 4
+    },
+    {
+      "id": 3,
+      "pages": 91,
+      "short_pages": [],
+      "expected_tokens": 32082,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 13
+    },
+    {
+      "id": 4,
+      "pages": 10,
+      "short_pages": [],
+      "expected_tokens": 1808,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 4
+    },
+    {
+      "id": 5,
+      "pages": 11,
+      "short_pages": [],
+      "expected_tokens": 2092,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 5
+    },
+    {
+      "id": 6,
+      "pages": 12,
+      "short_pages": [],
+      "expected_tokens": 1336,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 6
+    },
+    {
+      "id": 7,
+      "pages": 23,
+      "short_pages": [],
+      "expected_tokens": 4067,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 7
+    },
+    {
+      "id": 8,
+      "pages": 21,
+      "short_pages": [],
+      "expected_tokens": 4686,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 5
+    },
+    {
+      "id": 9,
+      "pages": 57,
+      "short_pages": [],
+      "expected_tokens": 18590,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 10
+    },
+    {
+      "id": 10,
+      "pages": 16,
+      "short_pages": [],
+      "expected_tokens": 2608,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 16
+    },
+    {
+      "id": 11,
+      "pages": 13,
+      "short_pages": [],
+      "expected_tokens": 2988,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 6
+    },
+    {
+      "id": 12,
+      "pages": 2,
+      "short_pages": [],
+      "expected_tokens": 330,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 2
+    },
+    {
+      "id": 13,
+      "pages": 25,
+      "short_pages": [
+        19
+      ],
+      "expected_tokens": 6077,
+      "missing_tokens": 2,
+      "missing_fraction": 0.000329,
+      "missing_examples": [
+        [
+          "work",
+          1
+        ],
+        [
+          "around",
+          1
+        ]
+      ],
+      "source_links": 4
+    },
+    {
+      "id": 14,
+      "pages": 10,
+      "short_pages": [],
+      "expected_tokens": 2370,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 5
+    },
+    {
+      "id": 15,
+      "pages": 24,
+      "short_pages": [],
+      "expected_tokens": 4971,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 5
+    },
+    {
+      "id": 16,
+      "pages": 74,
+      "short_pages": [],
+      "expected_tokens": 20780,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 18
+    },
+    {
+      "id": 17,
+      "pages": 49,
+      "short_pages": [],
+      "expected_tokens": 10623,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 14
+    },
+    {
+      "id": 18,
+      "pages": 10,
+      "short_pages": [],
+      "expected_tokens": 3050,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 3
+    },
+    {
+      "id": 19,
+      "pages": 15,
+      "short_pages": [],
+      "expected_tokens": 4756,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 4
+    },
+    {
+      "id": 20,
+      "pages": 20,
+      "short_pages": [],
+      "expected_tokens": 6011,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 6
+    },
+    {
+      "id": 21,
+      "pages": 14,
+      "short_pages": [],
+      "expected_tokens": 2152,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 4
+    },
+    {
+      "id": 22,
+      "pages": 9,
+      "short_pages": [],
+      "expected_tokens": 1624,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 4
+    },
+    {
+      "id": 23,
+      "pages": 12,
+      "short_pages": [],
+      "expected_tokens": 3097,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 4
+    },
+    {
+      "id": 24,
+      "pages": 13,
+      "short_pages": [],
+      "expected_tokens": 6113,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 3
+    },
+    {
+      "id": 25,
+      "pages": 5,
+      "short_pages": [],
+      "expected_tokens": 493,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 3
+    },
+    {
+      "id": 26,
+      "pages": 27,
+      "short_pages": [],
+      "expected_tokens": 8696,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 4
+    },
+    {
+      "id": 27,
+      "pages": 49,
+      "short_pages": [],
+      "expected_tokens": 58772,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 5
+    },
+    {
+      "id": 28,
+      "pages": 28,
+      "short_pages": [],
+      "expected_tokens": 10198,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 4
+    },
+    {
+      "id": 29,
+      "pages": 8,
+      "short_pages": [],
+      "expected_tokens": 2284,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 3
+    },
+    {
+      "id": 30,
+      "pages": 54,
+      "short_pages": [],
+      "expected_tokens": 16168,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 10
+    },
+    {
+      "id": 31,
+      "pages": 14,
+      "short_pages": [],
+      "expected_tokens": 3162,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 4
+    },
+    {
+      "id": 32,
+      "pages": 5,
+      "short_pages": [],
+      "expected_tokens": 754,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 2
+    },
+    {
+      "id": 33,
+      "pages": 45,
+      "short_pages": [],
+      "expected_tokens": 13164,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 4
+    },
+    {
+      "id": 34,
+      "pages": 15,
+      "short_pages": [],
+      "expected_tokens": 5138,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 3
+    },
+    {
+      "id": 35,
+      "pages": 7,
+      "short_pages": [],
+      "expected_tokens": 943,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 3
+    },
+    {
+      "id": 36,
+      "pages": 11,
+      "short_pages": [],
+      "expected_tokens": 3348,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 3
+    },
+    {
+      "id": 37,
+      "pages": 76,
+      "short_pages": [],
+      "expected_tokens": 23705,
+      "missing_tokens": 1,
+      "missing_fraction": 4.2e-05,
+      "missing_examples": [
+        [
+          "complaint",
+          1
+        ]
+      ],
+      "source_links": 9
+    },
+    {
+      "id": 38,
+      "pages": 23,
+      "short_pages": [],
+      "expected_tokens": 6981,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 4
+    },
+    {
+      "id": 39,
+      "pages": 15,
+      "short_pages": [],
+      "expected_tokens": 4014,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 3
+    },
+    {
+      "id": 40,
+      "pages": 15,
+      "short_pages": [],
+      "expected_tokens": 14607,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 3
+    },
+    {
+      "id": 41,
+      "pages": 3,
+      "short_pages": [],
+      "expected_tokens": 380,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 2
+    },
+    {
+      "id": 42,
+      "pages": 6,
+      "short_pages": [],
+      "expected_tokens": 987,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 3
+    },
+    {
+      "id": 43,
+      "pages": 13,
+      "short_pages": [],
+      "expected_tokens": 3304,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 4
+    },
+    {
+      "id": 44,
+      "pages": 23,
+      "short_pages": [],
+      "expected_tokens": 5430,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 4
+    },
+    {
+      "id": 45,
+      "pages": 26,
+      "short_pages": [],
+      "expected_tokens": 6057,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 4
+    },
+    {
+      "id": 46,
+      "pages": 70,
+      "short_pages": [],
+      "expected_tokens": 10112,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 4
+    },
+    {
+      "id": 47,
+      "pages": 39,
+      "short_pages": [],
+      "expected_tokens": 9146,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 12
+    },
+    {
+      "id": 48,
+      "pages": 6,
+      "short_pages": [],
+      "expected_tokens": 1218,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 3
+    },
+    {
+      "id": 49,
+      "pages": 10,
+      "short_pages": [],
+      "expected_tokens": 1815,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 4
+    },
+    {
+      "id": 50,
+      "pages": 14,
+      "short_pages": [],
+      "expected_tokens": 4657,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 2
+    },
+    {
+      "id": 51,
+      "pages": 151,
+      "short_pages": [],
+      "expected_tokens": 25883,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 13
+    },
+    {
+      "id": 52,
+      "pages": 245,
+      "short_pages": [],
+      "expected_tokens": 38697,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 338
+    },
+    {
+      "id": 53,
+      "pages": 63,
+      "short_pages": [],
+      "expected_tokens": 21305,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 6
+    },
+    {
+      "id": 54,
+      "pages": 2,
+      "short_pages": [],
+      "expected_tokens": 0,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 6
+    },
+    {
+      "id": 55,
+      "pages": 21,
+      "short_pages": [],
+      "expected_tokens": 5585,
+      "missing_tokens": 0,
+      "missing_fraction": 0.0,
+      "missing_examples": [],
+      "source_links": 6
+    }
+  ]
+}

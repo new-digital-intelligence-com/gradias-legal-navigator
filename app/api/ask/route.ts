@@ -1,3 +1,5 @@
+import {retrieveCompetitor} from '@/lib/competitor-search';
+import {mentionedCompetitors,competitors} from '@/lib/competitors';
 import {content,retrieve,navigationIntent,type Passage} from '@/lib/content';
 export const dynamic='force-dynamic';
 const headers={'Cache-Control':'private, no-store'};
@@ -8,13 +10,14 @@ export async function POST(request:Request){
  if(!origin||origin!==new URL(request.url).origin)return reply({error:'This request must come from the app.'},403);
  if(!request.headers.get('content-type')?.includes('application/json'))return reply({error:'JSON is required.'},415);
  const body=await request.text();if(body.length>20000)return reply({error:'Please shorten your question.'},413);
- let input:{question?:unknown;country?:unknown;history?:unknown};try{input=JSON.parse(body);}catch{return reply({error:'Invalid request.'},400);}
+ let input:{question?:unknown;country?:unknown;history?:unknown;competitorId?:unknown};try{input=JSON.parse(body);}catch{return reply({error:'Invalid request.'},400);}
  if(typeof input.question!=='string'||!input.question.trim()||input.question.length>1600)return reply({error:'Enter a question of up to 1,600 characters.'},400);
  const question=input.question.trim();const country=typeof input.country==='string'&&['All','Germany','UK','US'].includes(input.country)?input.country:'All';
  const history=Array.isArray(input.history)?input.history.slice(-6).filter(x=>x&&typeof x.text==='string'&&['user','assistant'].includes(x.role)).map(x=>({role:x.role,text:x.text.slice(0,1800)})):[];
  const previous=history.filter(x=>x.role==='user').slice(-1)[0]?.text||'';
  const searchQuery=question.length<65&&/^(and|what about|how about|does that|why|can it|is it|what if|und)/i.test(question)?`${previous} ${question}`:question;
- const refs=retrieve(searchQuery,country,12);const action=navigationIntent(question);
+ const selectedCompetitor=typeof input.competitorId==='string'&&competitors.some(c=>c.id===input.competitorId)?input.competitorId:undefined;
+ const refs=selectedCompetitor||mentionedCompetitors(searchQuery).length?retrieveCompetitor(searchQuery,selectedCompetitor,12):retrieve(searchQuery,country,12);const action=navigationIntent(question);
  const cite=(p:Passage)=>({id:p.id,title:p.title,excerpt:p.text.slice(0,1600),tab:p.tab,target:p.target,country:p.country,urls:[...new Set(p.urls)].filter(u=>/^https?:\/\//.test(u)).slice(0,3)});
  if(!process.env.OPENAI_API_KEY)return reply({mode:'search',text:action?'I can take you there. Use the navigation button below.':refs.length?'Here are the closest passages in the supplied research. Open a passage to read its full context.':'I could not find a relevant passage in the supplied research. Try a specific country, law, or topic.',citations:refs.slice(0,3).map(cite),action});
  // Paid inference is available only to a signed-in visitor of the private Site.

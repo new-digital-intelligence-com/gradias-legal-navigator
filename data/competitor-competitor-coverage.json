@@ -1,0 +1,992 @@
+[
+  {
+    "id": 1,
+    "name": "Inspera",
+    "website": {
+      "formattedValue": "https://inspera.com/",
+      "note": "Company/product homepage checked. See HomepageAudit row 6 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://www.inspera.com/\nOriginal URL retrieved (redirects followed). Updated to current product/successor or evidence URL.\nCurrent official product website available; native assessment/grading offering retained in comparison.\n\nGraide component evidence, merged into Inspera:\nOriginal URL: https://www.graide.co.uk/\nOriginal URL retrieved (redirects followed).\nGraide announced acquisition by Inspera on 3 June 2026; acquisition does not mean product closure.\n\nFormer standalone Graide value: https://www.graide.co.uk/. Product-specific or historical information; do not add its company/adoption counts to Inspera's.",
+      "hyperlink": "https://inspera.com/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://inspera.com/\n\nGraide component evidence, merged into Inspera:\nDetailed classification: Active — acquired by Inspera\nGraide announced acquisition by Inspera on 3 June 2026; acquisition does not mean product closure.\nSources: https://www.graide.co.uk/blog/graide-is-joining-inspera",
+    "note": "Includes Inspera and Graide, matching the combined spreadsheet entry. Graide Network is a different entry (54).",
+    "captured_count": 9,
+    "folder": "01 - Inspera",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "01 - Inspera/Privacy terms and statements.pdf",
+    "pages": 29,
+    "pdf_sha256": "82a6bb5cfcfeeebc6b1dae750809c70d8deaf255f35adaf5f9f41300aef41f42"
+  },
+  {
+    "id": 2,
+    "name": "EduGears AI",
+    "website": {
+      "formattedValue": "https://lti.edugears.ai/en",
+      "note": "Company/product homepage checked. See HomepageAudit row 7 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://lti.edugears.ai/en\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://lti.edugears.ai/en"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://lti.edugears.ai/en",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 3,
+    "folder": "02 - EduGears AI",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "02 - EduGears AI/Privacy terms and statements.pdf",
+    "pages": 8,
+    "pdf_sha256": "d387ca7f1a7191efd43b8f7998d7177917b94f56ae1850f0feacee1fb2c8a24e"
+  },
+  {
+    "id": 3,
+    "name": "Turnitin",
+    "website": {
+      "formattedValue": "https://www.turnitin.com/",
+      "note": "Company/product homepage checked. See HomepageAudit row 8 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nParent company website. Product websites: https://gradescope.com and https://examsoft.com\n\nGradescope evidence:\nOriginal URL: gradescope.com\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.\n\nExamSoft evidence:\nOriginal URL: examsoft.com\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.\n\nOriginal Gradescope value: https://gradescope.com\nOriginal ExamSoft value: https://examsoft.com",
+      "hyperlink": "https://www.turnitin.com/"
+    },
+    "status": "Active",
+    "notes": "Gradescope evidence:\nDetailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://gradescope.com\n\nExamSoft evidence:\nDetailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://examsoft.com",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 11,
+    "folder": "03 - Turnitin",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "03 - Turnitin/Privacy terms and statements.pdf",
+    "pages": 91,
+    "pdf_sha256": "5ba540742c3fd442c284c3a8ee8a59a7fecce4c34ef7a2124b8eaf3a6a9098b6"
+  },
+  {
+    "id": 4,
+    "name": "CoGrader",
+    "website": {
+      "formattedValue": "https://cograder.com/",
+      "note": "Company/product homepage checked. See HomepageAudit row 9 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://cograder.com/\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://cograder.com/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://cograder.com/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 3,
+    "folder": "04 - CoGrader",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "04 - CoGrader/Privacy terms and statements.pdf",
+    "pages": 10,
+    "pdf_sha256": "b6f7c3d06b653744aa5c6065e3d683eaad574104c20eda6d3b65696ea5d4fd79"
+  },
+  {
+    "id": 5,
+    "name": "Ed.ai",
+    "website": {
+      "formattedValue": "https://ed.ai/en",
+      "note": "Company/product homepage checked. See HomepageAudit row 10 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://ed.ai/en\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://ed.ai/en"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://ed.ai/en",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 4,
+    "folder": "05 - Ed.ai",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "05 - Ed.ai/Privacy terms and statements.pdf",
+    "pages": 11,
+    "pdf_sha256": "aaa8f86246a7f30dec237230fc08e778eb01f7fe5a37d4b73dfb5179dd4e973a"
+  },
+  {
+    "id": 6,
+    "name": "Proctor AI",
+    "website": {
+      "formattedValue": "https://www.proctorai.io/",
+      "note": "Company/product homepage checked. See HomepageAudit row 11 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://www.proctorai.io/\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://www.proctorai.io/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://www.proctorai.io/",
+    "note": "Includes the privacy policy, cookie policy, terms selector and the full visible text of the student Privacy & Data tab and faculty Data Management / Compliance tabs. Other role-specific terms tabs are outside this privacy capture.",
+    "captured_count": 5,
+    "folder": "06 - Proctor AI",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "06 - Proctor AI/Privacy terms and statements.pdf",
+    "pages": 12,
+    "pdf_sha256": "b7523551fe1f63425c24d9d95222ccc8301ef11c39180bc8a7e070800e9c52c7"
+  },
+  {
+    "id": 7,
+    "name": "GradeWithAI",
+    "website": {
+      "formattedValue": "https://www.gradewithai.com/",
+      "note": "Company/product homepage checked. See HomepageAudit row 12 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://www.gradewithai.com/\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://www.gradewithai.com/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://www.gradewithai.com/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 6,
+    "folder": "07 - GradeWithAI",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "07 - GradeWithAI/Privacy terms and statements.pdf",
+    "pages": 23,
+    "pdf_sha256": "ebedb3e50f5c9a3bec9cc00e933ac87a3a66e73aa544ec3eaf40a2361143df26"
+  },
+  {
+    "id": 8,
+    "name": "Examino",
+    "website": {
+      "formattedValue": "https://examino.ai/en",
+      "note": "Company/product homepage checked. See HomepageAudit row 13 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://examino.ai/en\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://examino.ai/en"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://examino.ai/en",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 4,
+    "folder": "08 - Examino",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "08 - Examino/Privacy terms and statements.pdf",
+    "pages": 21,
+    "pdf_sha256": "71259f3fa7e5467d2bdb453292638735f93f44eb151f411c117d4fefbcda1583"
+  },
+  {
+    "id": 9,
+    "name": "GradingPal",
+    "website": {
+      "formattedValue": "https://www.gradingpal.com/",
+      "note": "Homepage review, 13 Sep 2026. See HomepageAudit row 14 (13 Sep 2026) for source URLs and qualifications.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://www.alayna.ai/apps/gradingpal\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://www.gradingpal.com/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://www.alayna.ai/apps/gradingpal",
+    "note": "Includes the listed GradingPal site and the Alayna GradingPal product site identified in the spreadsheet. The documents retain their own named controllers and product scopes.",
+    "captured_count": 9,
+    "folder": "09 - GradingPal",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "09 - GradingPal/Privacy terms and statements.pdf",
+    "pages": 57,
+    "pdf_sha256": "6070bd4a8d0d3be0652343268f13a7a48086df4d310432896a3fbc0e0873070a"
+  },
+  {
+    "id": 10,
+    "name": "GradeOrbit",
+    "website": {
+      "formattedValue": "https://www.gradeorbit.co.uk/",
+      "note": "Company/product homepage checked. See HomepageAudit row 15 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://www.gradeorbit.co.uk/\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://www.gradeorbit.co.uk/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://www.gradeorbit.co.uk/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 3,
+    "folder": "10 - GradeOrbit",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "10 - GradeOrbit/Privacy terms and statements.pdf",
+    "pages": 16,
+    "pdf_sha256": "538cd36fb5a1096a641b7a8f592c3625a6801ea763aa5d818769ef84ad5dfa04"
+  },
+  {
+    "id": 11,
+    "name": "Marking AI",
+    "website": {
+      "formattedValue": "https://marking.ai/",
+      "note": "Company/product homepage checked. See HomepageAudit row 16 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://marking.ai/\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://marking.ai/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://marking.ai/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 5,
+    "folder": "11 - Marking AI",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "11 - Marking AI/Privacy terms and statements.pdf",
+    "pages": 13,
+    "pdf_sha256": "ca1927bb495b6259dd6bf306137cb16eea1d68fc3293e9ce5a6b2a9a98669e8e"
+  },
+  {
+    "id": 12,
+    "name": "Akindi",
+    "website": {
+      "formattedValue": "https://akindi.com",
+      "note": "Company/product homepage checked. See HomepageAudit row 17 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: akindi.com\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://akindi.com"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://akindi.com",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 1,
+    "folder": "12 - Akindi",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "12 - Akindi/Privacy terms and statements.pdf",
+    "pages": 2,
+    "pdf_sha256": "0fe834a47281a7f866bd05e6e03aacd2d20c54c32888dd32d3042c66caa76c81"
+  },
+  {
+    "id": 13,
+    "name": "EssayGrader",
+    "website": {
+      "formattedValue": "https://www.essaygrader.ai/",
+      "note": "Company/product homepage checked. See HomepageAudit row 18 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://www.essaygrader.ai/\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://www.essaygrader.ai/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://www.essaygrader.ai/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 3,
+    "folder": "13 - EssayGrader",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "13 - EssayGrader/Privacy terms and statements.pdf",
+    "pages": 25,
+    "pdf_sha256": "749c62c67564f3f473feb68e8a82995c8ef11bfa5497b4dca5ff1c1aa7e972e2"
+  },
+  {
+    "id": 14,
+    "name": "Quick Key",
+    "website": {
+      "formattedValue": "https://validatedlearning.co/",
+      "note": "Company/product homepage checked. See HomepageAudit row 19 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://validatedlearning.co/\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://validatedlearning.co/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://validatedlearning.co/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 4,
+    "folder": "14 - Quick Key",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "14 - Quick Key/Privacy terms and statements.pdf",
+    "pages": 10,
+    "pdf_sha256": "9c635d01803c0fe6038e960daae0bc998b05fe7328158ed75f7824909c62df52"
+  },
+  {
+    "id": 15,
+    "name": "GradeLab",
+    "website": {
+      "formattedValue": "https://gradelab.io/",
+      "note": "Company/product homepage checked. See HomepageAudit row 20 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://gradelab.io/\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://gradelab.io/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://gradelab.io/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 4,
+    "folder": "15 - GradeLab",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "15 - GradeLab/Privacy terms and statements.pdf",
+    "pages": 24,
+    "pdf_sha256": "41f7ac4e1501feb4f9bbf7e3319dcb71af3912eb8fe69b1afcb7d4eb2b8da6a4"
+  },
+  {
+    "id": 16,
+    "name": "Canvas LMS",
+    "website": {
+      "formattedValue": "https://www.instructure.com/canvas",
+      "note": "Company/product homepage checked. See HomepageAudit row 21 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: canvaslms.com\nOriginal URL retrieved (redirects followed). Updated to current product/successor or evidence URL.\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://www.instructure.com/canvas"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://www.instructure.com/canvas",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 16,
+    "folder": "16 - Canvas LMS",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "16 - Canvas LMS/Privacy terms and statements.pdf",
+    "pages": 74,
+    "pdf_sha256": "4772599d919d8205c2cbcd1a8252ff5f6e41bde4b254d5eb7b9a6d0bc8e25400"
+  },
+  {
+    "id": 17,
+    "name": "Brightspace by D2L",
+    "website": {
+      "formattedValue": "https://www.d2l.com/",
+      "note": "Company/product homepage checked. See HomepageAudit row 22 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: brightspace.com\nOriginal URL retrieved (redirects followed). Updated to current product/successor or evidence URL.\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://www.d2l.com/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://www.d2l.com/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 13,
+    "folder": "17 - Brightspace by D2L",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "17 - Brightspace by D2L/Privacy terms and statements.pdf",
+    "pages": 49,
+    "pdf_sha256": "434eca70bc5aaa34af8150230aeb2c16e8a08867f6c3e539209de7c411dae9f1"
+  },
+  {
+    "id": 18,
+    "name": "CourseAssist AI",
+    "website": {
+      "formattedValue": "https://courseassistai.com/grader.html",
+      "note": "Company/product homepage checked. See HomepageAudit row 23 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://courseassistai.com/grader.html\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://courseassistai.com/grader.html"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://courseassistai.com/grader.html",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 2,
+    "folder": "18 - CourseAssist AI",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "18 - CourseAssist AI/Privacy terms and statements.pdf",
+    "pages": 10,
+    "pdf_sha256": "3fc80109378618b169d1a97f40cde83902c3faa76b2df0ebecf9ea89b928ef36"
+  },
+  {
+    "id": 19,
+    "name": "Crowdmark",
+    "website": {
+      "formattedValue": "https://crowdmark.com",
+      "note": "Company/product homepage checked. See HomepageAudit row 24 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: crowdmark.com\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://crowdmark.com"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://crowdmark.com",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 3,
+    "folder": "19 - Crowdmark",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "19 - Crowdmark/Privacy terms and statements.pdf",
+    "pages": 15,
+    "pdf_sha256": "c6163bb07ce526a08c4ba9d4a3dd2d323b0d546c6f08f92cc52d7f5ab7b58ed2"
+  },
+  {
+    "id": 20,
+    "name": "Class Companion",
+    "website": {
+      "formattedValue": "https://classcompanion.com/",
+      "note": "Company/product homepage checked. See HomepageAudit row 25 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://classcompanion.com/\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://classcompanion.com/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://classcompanion.com/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 5,
+    "folder": "20 - Class Companion",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "20 - Class Companion/Privacy terms and statements.pdf",
+    "pages": 20,
+    "pdf_sha256": "adae99933fe4c1fb245133f74c9c486c07332deb26007dcace133b0d839eb1f5"
+  },
+  {
+    "id": 21,
+    "name": "Exam AI",
+    "website": {
+      "formattedValue": "https://www.examai.ai/",
+      "note": "Company/product homepage checked. See HomepageAudit row 26 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://www.examai.ai/\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://www.examai.ai/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://www.examai.ai/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 3,
+    "folder": "21 - Exam AI",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "21 - Exam AI/Privacy terms and statements.pdf",
+    "pages": 14,
+    "pdf_sha256": "5c93e96bdda6100792f524e86cc8336663cba63e6c0cfd6a2ea5d8e1b691ff91"
+  },
+  {
+    "id": 22,
+    "name": "GoGrade AI",
+    "website": {
+      "formattedValue": "https://gograde.ai/",
+      "note": "Company/product homepage checked. See HomepageAudit row 27 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://gograde.ai/\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://gograde.ai/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://gograde.ai/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 3,
+    "folder": "22 - GoGrade AI",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "22 - GoGrade AI/Privacy terms and statements.pdf",
+    "pages": 9,
+    "pdf_sha256": "fb625a3f47a1d3b102af923b41fc04fe18edaca106b6a71e9bc2acd0810fb478"
+  },
+  {
+    "id": 23,
+    "name": "Frizzle",
+    "website": {
+      "formattedValue": "https://www.frizzle.com/",
+      "note": "Company/product homepage checked. See HomepageAudit row 28 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: ycombinator.com/companies/frizzle (own site not verified)\nOriginal URL could not be fully retrieved; follow-up official evidence checked. Updated to current product/successor or evidence URL.\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://www.frizzle.com/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://www.frizzle.com/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 3,
+    "folder": "23 - Frizzle",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "23 - Frizzle/Privacy terms and statements.pdf",
+    "pages": 12,
+    "pdf_sha256": "5543078cd5c3f37fd147ddd394b2cb3cf5915cab760bba23a810e8c19fa478ff"
+  },
+  {
+    "id": 24,
+    "name": "Pensive (Pensieve, Inc.)",
+    "website": {
+      "formattedValue": "https://www.pensive.com/schools/",
+      "note": "Company/product homepage checked. See HomepageAudit row 29 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://www.pensieve.co/\nOriginal URL could not be fully retrieved; follow-up official evidence checked. Updated to current product/successor or evidence URL.\nPensieve redirects to Pensive; current schools product offers AI grading.",
+      "hyperlink": "https://www.pensive.com/schools/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — renamed Pensive\nPensieve redirects to Pensive; current schools product offers AI grading.\nSources: https://www.pensive.com/schools/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 2,
+    "folder": "24 - Pensive (Pensieve, Inc.)",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "24 - Pensive (Pensieve, Inc.)/Privacy terms and statements.pdf",
+    "pages": 13,
+    "pdf_sha256": "d1619479e5dcfb37c2d4e1efacb56a4678bf6bce523154f96ac7aaaf71a58709"
+  },
+  {
+    "id": 25,
+    "name": "MarkBot",
+    "website": {
+      "formattedValue": "https://www.markbot.org/",
+      "note": "Company/product homepage checked. See HomepageAudit row 30 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://www.markbot.org/\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://www.markbot.org/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://www.markbot.org/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 2,
+    "folder": "25 - MarkBot",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "25 - MarkBot/Privacy terms and statements.pdf",
+    "pages": 5,
+    "pdf_sha256": "c63534266f76b75308e3a112799260252631413c0c8caaab74ffe3d3d81db6ad"
+  },
+  {
+    "id": 26,
+    "name": "Top Marks AI",
+    "website": {
+      "formattedValue": "https://www.topmarks.ai/",
+      "note": "Company/product homepage checked. See HomepageAudit row 31 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://www.topmarks.ai/\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://www.topmarks.ai/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://www.topmarks.ai/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 3,
+    "folder": "26 - Top Marks AI",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "26 - Top Marks AI/Privacy terms and statements.pdf",
+    "pages": 27,
+    "pdf_sha256": "cc7705477202fd530400fb1f29554257eb7cb91620b937e82c4ba290443f0179"
+  },
+  {
+    "id": 27,
+    "name": "Youdao (NetEase)",
+    "website": {
+      "formattedValue": "https://youdao.com/",
+      "note": "Company/product homepage checked. See HomepageAudit row 32 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://youdao.com https://zhihui.youdao.com/intro/index.html\nOriginal URL retrieved (redirects followed). Secondary education-platform URL responds with JavaScript-only content.\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://youdao.com/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://youdao.com\nhttps://zhihui.youdao.com/intro/index.html",
+    "note": "The main Youdao site links a dictionary privacy policy. AI platform terms, its privacy policy, and linked child protection rules are included separately. A dedicated public policy for the Zhihui smart-education deployment was not located; do not assume the dictionary or API policy governs every school deployment.",
+    "captured_count": 4,
+    "folder": "27 - Youdao (NetEase)",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "27 - Youdao (NetEase)/Privacy terms and statements.pdf",
+    "pages": 49,
+    "pdf_sha256": "80bee24bc1b7938c06c9b9fe773022227706acb229f87befaacd8545038ff06c"
+  },
+  {
+    "id": 28,
+    "name": "AI Grader by Copyleaks",
+    "website": {
+      "formattedValue": "https://copyleaks.com/ai-grader",
+      "note": "Company/product homepage checked. See HomepageAudit row 33 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://copyleaks.com/ai-grader\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://copyleaks.com/ai-grader"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://copyleaks.com/ai-grader",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 3,
+    "folder": "28 - AI Grader by Copyleaks",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "28 - AI Grader by Copyleaks/Privacy terms and statements.pdf",
+    "pages": 28,
+    "pdf_sha256": "8fc8a5f9aae489de59e374746d7f49ca11e546ff0893e84eaf01794d5d710f16"
+  },
+  {
+    "id": 29,
+    "name": "Cognii",
+    "website": {
+      "formattedValue": "https://cognii.com",
+      "note": "Company/product homepage checked. See HomepageAudit row 34 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: cognii.com\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://cognii.com"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://cognii.com",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 2,
+    "folder": "29 - Cognii",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "29 - Cognii/Privacy terms and statements.pdf",
+    "pages": 8,
+    "pdf_sha256": "0f4bf4ac2736350e43384f6d1ac19e45560ff456f3248a01bdac6b10b6d01d97"
+  },
+  {
+    "id": 30,
+    "name": "Kahoot!",
+    "website": {
+      "formattedValue": "https://kahoot.com",
+      "note": "Company/product homepage checked. See HomepageAudit row 35 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: kahoot.com\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://kahoot.com"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://kahoot.com",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 9,
+    "folder": "30 - Kahoot",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "30 - Kahoot/Privacy terms and statements.pdf",
+    "pages": 54,
+    "pdf_sha256": "958f8993ff60d96becfd4be3f6e002c7637591ca9366040b85a39921458aa67d"
+  },
+  {
+    "id": 31,
+    "name": "edaira",
+    "website": {
+      "formattedValue": "https://edaira.ai/",
+      "note": "Company/product homepage checked. See HomepageAudit row 36 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://edaira.ai/\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.\nMerged legacy Noten Copilot evidence (same product):\nOriginal URL: https://notencopilot.de/\nOriginal URL retrieved (redirects followed). Updated to current product/successor or evidence URL.\nNoten Copilot redirects to edaira. Same successor product also has an edaira column; retained as requested, not a separate company.",
+      "hyperlink": "https://edaira.ai/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — formerly Noten Copilot\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://edaira.ai/\nMerged legacy Noten Copilot evidence (same product):\nNoten Copilot redirects to edaira. Same successor product also has an edaira column; retained as requested, not a separate company.\nSources: https://edaira.ai/\nLegacy Noten Copilot cell retained for reference: Active — rebranded to edaira. Current edaira value takes precedence; adoption and LinkedIn counts are not summed.",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 3,
+    "folder": "31 - edaira",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "31 - edaira/Privacy terms and statements.pdf",
+    "pages": 14,
+    "pdf_sha256": "77d7c650432673e571b63d2b575582a0b9a1886e0d1a7844acdb6a1ff7857f86"
+  },
+  {
+    "id": 32,
+    "name": "Gradie",
+    "website": {
+      "formattedValue": "https://gradie.ai/",
+      "note": "Company/product homepage checked. See HomepageAudit row 37 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://gradie.ai/\nOriginal URL could not be fully retrieved; follow-up official evidence checked.\nOfficial Gradie website is indexed with current early-access grading offering; JavaScript homepage not fully readable.",
+      "hyperlink": "https://gradie.ai/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — early access advertised\nOfficial Gradie website is indexed with current early-access grading offering; JavaScript homepage not fully readable.\nSources: https://gradie.ai/",
+    "note": "Homepage privacy/security statements captured. The footer Privacy Policy and Terms links point to #privacy and #terms on the homepage; navigation did not reveal a standalone policy. No standalone policy text was found.",
+    "captured_count": 1,
+    "folder": "32 - Gradie",
+    "coverage": "Statements only; standalone policy not located",
+    "pdf": "32 - Gradie/Privacy terms and statements.pdf",
+    "pages": 5,
+    "pdf_sha256": "f848d7785efc0a5225e8469897c516e3c87da9232beba5dd5f649db1ef9e1028"
+  },
+  {
+    "id": 33,
+    "name": "Zengrade",
+    "website": {
+      "formattedValue": "https://zengrade.com/#ueber-uns",
+      "note": "Company/product homepage checked. See HomepageAudit row 38 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://zengrade.com/#ueber-uns\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://zengrade.com/#ueber-uns"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://zengrade.com/#ueber-uns",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 3,
+    "folder": "33 - Zengrade",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "33 - Zengrade/Privacy terms and statements.pdf",
+    "pages": 45,
+    "pdf_sha256": "7366aa783df7b07c35dd23e61c7518ed3f2517f8e98c8678ad8e5973c72d7480"
+  },
+  {
+    "id": 34,
+    "name": "Socrative",
+    "website": {
+      "formattedValue": "https://socrative.com",
+      "note": "Company/product homepage checked. See HomepageAudit row 39 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: socrative.com\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://socrative.com"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://socrative.com",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 2,
+    "folder": "34 - Socrative",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "34 - Socrative/Privacy terms and statements.pdf",
+    "pages": 15,
+    "pdf_sha256": "06a77bea4a98fedf1204f70b5779d163c56b8357241212815f78d752b2b949b4"
+  },
+  {
+    "id": 35,
+    "name": "neoPat by iamneo (Examly)",
+    "website": {
+      "formattedValue": "https://iamneo.ai/neopat/",
+      "note": "Company/product homepage checked. See HomepageAudit row 40 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://neopat.io/\nOriginal URL could not be fully retrieved; follow-up official evidence checked. Updated to current product/successor or evidence URL.\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://iamneo.ai/neopat/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://iamneo.ai/neopat/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 2,
+    "folder": "35 - neoPat by iamneo (Examly)",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "35 - neoPat by iamneo (Examly)/Privacy terms and statements.pdf",
+    "pages": 7,
+    "pdf_sha256": "3feb30c686df81728073e7419169ac8fe6a094b65e7f6da26a67c9a5d83df383"
+  },
+  {
+    "id": 36,
+    "name": "Eklavvya",
+    "website": {
+      "formattedValue": "https://eklavvya.com",
+      "note": "Company/product homepage checked. See HomepageAudit row 41 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: eklavvya.com\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://eklavvya.com"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://eklavvya.com",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 2,
+    "folder": "36 - Eklavvya",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "36 - Eklavvya/Privacy terms and statements.pdf",
+    "pages": 11,
+    "pdf_sha256": "c604d5c4d97d4e683aa4e604fcb9c237205da27a9ed5e83bff5a258537cbbb54"
+  },
+  {
+    "id": 37,
+    "name": "Pear Assessment (Edulastic)",
+    "website": {
+      "formattedValue": "https://www.peardeck.com/products/pear-assessment",
+      "note": "Company/product homepage checked. See HomepageAudit row 42 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: edulastic.com\nOriginal URL retrieved (redirects followed). Updated to current product/successor or evidence URL.\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://www.peardeck.com/products/pear-assessment"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://www.peardeck.com/products/pear-assessment",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 8,
+    "folder": "37 - Pear Assessment (Edulastic)",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "37 - Pear Assessment (Edulastic)/Privacy terms and statements.pdf",
+    "pages": 76,
+    "pdf_sha256": "235bc51a511a8db9de218234855319572ad2e0675ba9fae10380e7956f2ea43a"
+  },
+  {
+    "id": 38,
+    "name": "GPTZero AI Reviewer",
+    "website": {
+      "formattedValue": "https://gptzero.me/ai-reviewer",
+      "note": "Company/product homepage checked. See HomepageAudit row 43 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://gptzero.me/ai-reviewer\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://gptzero.me/ai-reviewer"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://gptzero.me/ai-reviewer",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 3,
+    "folder": "38 - GPTZero AI Reviewer",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "38 - GPTZero AI Reviewer/Privacy terms and statements.pdf",
+    "pages": 23,
+    "pdf_sha256": "eab57f416acbbf667626123453d2ded8b4df62c138ac7c5cfd6cbebd4c1d1255"
+  },
+  {
+    "id": 39,
+    "name": "Progressay",
+    "website": {
+      "formattedValue": "https://www.progressay.com/",
+      "note": "Company/product homepage checked. See HomepageAudit row 44 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://www.progressay.com/\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://www.progressay.com/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://www.progressay.com/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 2,
+    "folder": "39 - Progressay",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "39 - Progressay/Privacy terms and statements.pdf",
+    "pages": 15,
+    "pdf_sha256": "99990f54e7abd83f38422752c1d319a7df9facab4655a7d4266a0fd4eb936a76"
+  },
+  {
+    "id": 40,
+    "name": "Zhihuishu",
+    "website": {
+      "formattedValue": "https://zhihuishu.com",
+      "note": "Company/product homepage checked. See HomepageAudit row 45 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: zhihuishu.com\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://zhihuishu.com"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://zhihuishu.com",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 2,
+    "folder": "40 - Zhihuishu",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "40 - Zhihuishu/Privacy terms and statements.pdf",
+    "pages": 15,
+    "pdf_sha256": "9535ee8e6fdd4a6c0a5e7c956e37e0aa50c12740efaa1ff5fb28f4c3d705942f"
+  },
+  {
+    "id": 41,
+    "name": "Markr",
+    "website": {
+      "formattedValue": "https://www.testmarkr.com/",
+      "note": "Company/product homepage checked. See HomepageAudit row 46 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://www.testmarkr.com/\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://www.testmarkr.com/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://www.testmarkr.com/",
+    "note": "Homepage security and anonymisation statements captured. No standalone public privacy policy or service terms were located on the site or in targeted domain searches.",
+    "captured_count": 1,
+    "folder": "41 - Markr",
+    "coverage": "Statements only; standalone policy not located",
+    "pdf": "41 - Markr/Privacy terms and statements.pdf",
+    "pages": 3,
+    "pdf_sha256": "ca10d8cd50a6fac5fff95de5947ba3bd6fbb859606c308c653ab1ce9f6620248"
+  },
+  {
+    "id": 42,
+    "name": "MathGrader.ai",
+    "website": {
+      "formattedValue": "https://www.mathgrader.ai/",
+      "note": "Company/product homepage checked. See HomepageAudit row 47 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://www.mathgrader.ai/\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://www.mathgrader.ai/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://www.mathgrader.ai/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 2,
+    "folder": "42 - MathGrader.ai",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "42 - MathGrader.ai/Privacy terms and statements.pdf",
+    "pages": 6,
+    "pdf_sha256": "c0075272ab002d66c82aa8fbf9762e3a57975b1692aedea44c32aed7bf5ea38e"
+  },
+  {
+    "id": 43,
+    "name": "Fuxam",
+    "website": {
+      "formattedValue": "https://www.fuxam.com/en",
+      "note": "Company/product homepage checked. See HomepageAudit row 48 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: fuxam.com\nOriginal URL retrieved (redirects followed). Updated to current product/successor or evidence URL.\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://www.fuxam.com/en"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://www.fuxam.com/en",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 3,
+    "folder": "43 - Fuxam",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "43 - Fuxam/Privacy terms and statements.pdf",
+    "pages": 13,
+    "pdf_sha256": "941eaf9877a0886b0bfb74581d9de6dbfebc877366b0be49ac56664a64af6bc2"
+  },
+  {
+    "id": 44,
+    "name": "Korrektur Kumpel",
+    "website": {
+      "formattedValue": "https://korrekturkumpel.de/",
+      "note": "Company/product homepage checked. See HomepageAudit row 49 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://korrekturkumpel.de/\nOriginal URL retrieved (redirects followed).\nCurrent Korrektur Kumpel product website is available. Previous Closed label was unsupported and removed.",
+      "hyperlink": "https://korrekturkumpel.de/"
+    },
+    "status": "Inactive",
+    "notes": "Set to Inactive at user request on 2026-09-13.\nPrevious classification: Active — official site available; https://korrekturkumpel.de/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 3,
+    "folder": "44 - Korrektur Kumpel",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "44 - Korrektur Kumpel/Privacy terms and statements.pdf",
+    "pages": 23,
+    "pdf_sha256": "92820146aff824fe976d6a2e8c24634a8e1eb12e47d634f3440e95cc1dcfaaa9"
+  },
+  {
+    "id": 45,
+    "name": "TimelyGrader",
+    "website": {
+      "formattedValue": "https://www.timelygrader.ai/",
+      "note": "Company/product homepage checked. See HomepageAudit row 50 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://www.timelygrader.ai/\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://www.timelygrader.ai/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://www.timelygrader.ai/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 3,
+    "folder": "45 - TimelyGrader",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "45 - TimelyGrader/Privacy terms and statements.pdf",
+    "pages": 26,
+    "pdf_sha256": "e4e62b33991a4025b5217c058f017b0de0e15b00622e88eec78d9bb9d7e0d371"
+  },
+  {
+    "id": 46,
+    "name": "Enlighten AI",
+    "website": {
+      "formattedValue": "https://enlightenme.ai/ai-grading-assistant",
+      "note": "Company/product homepage checked. See HomepageAudit row 51 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://enlightenme.ai/\nOriginal URL could not be fully retrieved; follow-up official evidence checked. Updated to current product/successor or evidence URL.\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://enlightenme.ai/ai-grading-assistant"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://enlightenme.ai/ai-grading-assistant\nhttps://support.enlightenme.ai/en/articles/15677302-how-to-grade-a-whole-class-with-ai-in-enlightenai",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 3,
+    "folder": "46 - Enlighten AI",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "46 - Enlighten AI/Privacy terms and statements.pdf",
+    "pages": 70,
+    "pdf_sha256": "86f3ad8d42f00297fff1c5a09793e3208cb86ebf176ae687e3463d2af742947c"
+  },
+  {
+    "id": 47,
+    "name": "Edexia",
+    "website": {
+      "formattedValue": "https://edexia.com/",
+      "note": "Company/product homepage checked. See HomepageAudit row 52 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: ycombinator.com/companies/edexia (own site not verified)\nOriginal URL could not be fully retrieved; follow-up official evidence checked. Updated to current product/successor or evidence URL.\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://edexia.com/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://edexia.com/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 11,
+    "folder": "47 - Edexia",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "47 - Edexia/Privacy terms and statements.pdf",
+    "pages": 39,
+    "pdf_sha256": "948615ce8234d353b25ada8a296b2ec0bbc4412952a4febff3a316484a5f0f3f"
+  },
+  {
+    "id": 48,
+    "name": "Kangaroos AI",
+    "website": {
+      "formattedValue": "https://www.kangaroos.ai/",
+      "note": "Company/product homepage checked. See HomepageAudit row 53 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://www.kangaroos.ai/\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://www.kangaroos.ai/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://www.kangaroos.ai/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 2,
+    "folder": "48 - Kangaroos AI",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "48 - Kangaroos AI/Privacy terms and statements.pdf",
+    "pages": 6,
+    "pdf_sha256": "5266d905c41994a907a56df8254998d5678cfa9a924813df1fa400ac5c5e05c5"
+  },
+  {
+    "id": 49,
+    "name": "StarGrader",
+    "website": {
+      "formattedValue": "https://stargrader.com/",
+      "note": "Company/product homepage checked. See HomepageAudit row 54 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://stargrader.com/\nOriginal URL retrieved (redirects followed).\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://stargrader.com/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://stargrader.com/",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 3,
+    "folder": "49 - StarGrader",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "49 - StarGrader/Privacy terms and statements.pdf",
+    "pages": 10,
+    "pdf_sha256": "47f2b92d5a9e97456909513ec0d444fb84c193b4b870af43120932288387df38"
+  },
+  {
+    "id": 50,
+    "name": "ETS's e-rater",
+    "website": {
+      "formattedValue": "https://www.ets.org/erater.html",
+      "note": "Company/product homepage checked. See HomepageAudit row 55 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: ets.org/erater\nOriginal URL could not be fully retrieved; follow-up official evidence checked. Updated to current product/successor or evidence URL.\nCurrent official product website available; native assessment/grading offering retained in comparison.",
+      "hyperlink": "https://www.ets.org/erater.html"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — offering verified\nCurrent official product website available; native assessment/grading offering retained in comparison.\nSources: https://www.ets.org/erater.html",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 1,
+    "folder": "50 - ETS's e-rater",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "50 - ETS's e-rater/Privacy terms and statements.pdf",
+    "pages": 14,
+    "pdf_sha256": "10be5b0d625016c3ddcdc43b9b3a019d063fb5905ed765633c17cbc47710a3a5"
+  },
+  {
+    "id": 51,
+    "name": "Microsoft Forms",
+    "website": {
+      "formattedValue": "https://forms.cloud.microsoft/",
+      "note": "Company/product homepage checked. See HomepageAudit row 56 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: forms.microsoft.com\nOriginal URL could not be fully retrieved; follow-up official evidence checked. Updated to current product/successor or evidence URL.\nGeneral-purpose forms platform with native quiz grading. Excluded from direct-solution score; actual documented coverage retained separately.",
+      "hyperlink": "https://forms.cloud.microsoft/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — adjacent / general platform\nGeneral-purpose forms platform with native quiz grading. Excluded from direct-solution score; actual documented coverage retained separately.\nSources: https://forms.cloud.microsoft/\nhttps://support.microsoft.com/en-US/Forms/create-a-quiz-with-microsoft-forms\nhttps://support.microsoft.com/en-us/forms/check-and-share-your-quiz-results",
+    "note": "Forms-specific support statements are included alongside the broader Microsoft Privacy Statement and the Products and Services DPA. Scope depends on the account and customer agreement.",
+    "captured_count": 6,
+    "folder": "51 - Microsoft Forms",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "51 - Microsoft Forms/Privacy terms and statements.pdf",
+    "pages": 151,
+    "pdf_sha256": "4a0436440727f76a26359b5b24933e9f058f24d8753ddd56c73983de551d37e3"
+  },
+  {
+    "id": 52,
+    "name": "Google Classroom",
+    "website": {
+      "formattedValue": "https://edu.google.com/workspace-for-education/products/classroom/",
+      "note": "Company/product homepage checked. See HomepageAudit row 57 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: classroom.google.com\nOriginal URL could not be fully retrieved; follow-up official evidence checked. Updated to current product/successor or evidence URL.\nGeneral classroom platform; native quiz/practice-set and manual grading retained as feature coverage. Excluded from direct-solution score; actual documented coverage retained separately.",
+      "hyperlink": "https://edu.google.com/workspace-for-education/products/classroom/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — adjacent / general platform\nGeneral classroom platform; native quiz/practice-set and manual grading retained as feature coverage. Excluded from direct-solution score; actual documented coverage retained separately.\nSources: https://edu.google.com/workspace-for-education/products/classroom/\nhttps://support.google.com/edu/classroom/answer/13457451?hl=EN\nhttps://support.google.com/edu/classroom/answer/9095575?hl=en",
+    "note": "Includes Google Workspace for Education documents and general Google terms. Education-account commitments must be distinguished from general consumer service terms.",
+    "captured_count": 9,
+    "folder": "52 - Google Classroom",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "52 - Google Classroom/Privacy terms and statements.pdf",
+    "pages": 245,
+    "pdf_sha256": "be09ad11e8af9914cc94cbb6e09513fa8680561fec6bce09c3268f6165af97bf"
+  },
+  {
+    "id": 53,
+    "name": "Google Forms + Flubaroo",
+    "website": {
+      "formattedValue": "https://www.flubaroo.com/hc/quizzes-in-google-forms",
+      "note": "Company/product homepage checked. See HomepageAudit row 58 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: https://www.flubaroo.com/hc/quizzes-in-google-forms\nOriginal URL retrieved (redirects followed).\nGeneral-purpose forms platform plus spreadsheet add-on; native quiz grading retained. Excluded from direct-solution score; actual documented coverage retained separately.",
+      "hyperlink": "https://www.flubaroo.com/hc/quizzes-in-google-forms"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active — adjacent / general platform\nGeneral-purpose forms platform plus spreadsheet add-on; native quiz grading retained. Excluded from direct-solution score; actual documented coverage retained separately.\nSources: https://www.flubaroo.com/hc/quizzes-in-google-forms\nhttps://support.google.com/docs/answer/6281888?hl=en",
+    "note": "Flubaroo has its own combined terms/privacy document. Google Workspace Education notice and processing addendum are provided separately for the Google Forms component where used with an Education account; the general Google policy is also included.",
+    "captured_count": 4,
+    "folder": "53 - Google Forms + Flubaroo",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "53 - Google Forms + Flubaroo/Privacy terms and statements.pdf",
+    "pages": 63,
+    "pdf_sha256": "a1ca1ad564e85d52d47292fb2788ecf158383012dd683c0971049e36568d663b"
+  },
+  {
+    "id": 54,
+    "name": "Graide Network",
+    "website": {
+      "formattedValue": "https://marcolearning.com/contact/",
+      "note": "Company/product homepage checked. See HomepageAudit row 59 (13 Sep 2026) for retrieval limits and supplemental sources.\n\nPRIOR EVIDENCE (not newly verified unless stated):\nOriginal URL: graidenetwork.com\nOriginal URL could not be fully retrieved; follow-up official evidence checked. Updated to current product/successor or evidence URL.\nAcquired by Marco Learning in 2021; current successor site offers grading access/support. Standalone Graide Network brand retired. Existing feature coverage is not inferred wholesale from successor.",
+      "hyperlink": "https://marcolearning.com/contact/"
+    },
+    "status": "Active",
+    "notes": "Detailed classification: Active successor — Marco Learning\nAcquired by Marco Learning in 2021; current successor site offers grading access/support. Standalone Graide Network brand retired. Existing feature coverage is not inferred wholesale from successor.\nSources: https://marcolearning.com/contact/\nhttps://www.prnewswire.com/news-releases/marco-learning-acquires-the-graide-network-to-build-comprehensive-support-system-for-schools-301254469.html",
+    "note": "The spreadsheet identifies Marco Learning as the successor to Graide Network. Official policy and terms links were located, but the domain did not resolve for direct downloads and the browser research service returned an error. Links are retained; no full policy PDF is represented as downloaded.",
+    "captured_count": 0,
+    "folder": "54 - Graide Network",
+    "coverage": "Links only; website unavailable",
+    "pdf": "54 - Graide Network/Coverage note - links only.pdf",
+    "pages": 2,
+    "pdf_sha256": "66f0c03cb9e179448c4e743bce317e1ed306e9903cc93d3f4753c0f74687b757"
+  },
+  {
+    "id": 55,
+    "name": "Exam.net",
+    "website": {
+      "formattedValue": "https://exam.net/",
+      "note": "Reviewed 13 Sep 2026. Source: https://exam.net/ and https://exam.net/how-it-works",
+      "hyperlink": "https://exam.net/"
+    },
+    "status": "Active",
+    "notes": "Reviewed 13 Sep 2026. Source: https://exam.net/ and https://exam.net/how-it-works",
+    "note": "Public documents captured from the competitor website and its linked legal pages. Vendor statements are preserved as published, without independent certification.",
+    "captured_count": 5,
+    "folder": "55 - Exam.net",
+    "coverage": "Policy and supporting documents captured",
+    "pdf": "55 - Exam.net/Privacy terms and statements.pdf",
+    "pages": 21,
+    "pdf_sha256": "1f2d92d9ed602e425b404319d07bfd1f905a6a4cf2ec98df1000518fb979217a"
+  }
+]

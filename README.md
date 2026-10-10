@@ -8,6 +8,7 @@ A responsive legal research library for AI-assisted exam grading, using Gradias 
 - Country views: Germany, United Kingdom, United States, and all 16 German states' guidance.
 - Q&A: 22 searchable answers from the supplied document.
 - Sources: 222 links with provenance and 59 original document downloads with SHA-256 hashes.
+- Competitors: 55 companies, 138 sourced legal positions, 236 links, 62 archived files and searchable text from 1,657 pages.
 - Ask Gradias: contextual source retrieval, navigation and server-side OpenAI Responses integration. Without credentials it clearly shows source-search mode.
 
 ## Development
@@ -53,6 +54,16 @@ Yes means a requirement is stated in the reviewed provisions with its qualificat
 
 ## Publication and rights
 
-`.openai/hosting.json` identifies the owner-private Site. Use the Sites source/build/package workflow so the deployed archive matches the pushed commit. GitHub repository visibility is managed separately from Site access.
+`.openai/hosting.json` identifies the public Site. Use the Sites source/build/package workflow so the deployed archive matches the pushed commit. GitHub repository visibility is managed separately from Site access.
 
 Gradias logos are supplied brand assets. Research and linked materials retain their respective rights; this repository grants no additional licence to those materials. Inter uses the SIL Open Font License in `public/brand/Inter-OFL.txt`.
+
+## Competitor archive
+
+The Competitors tab covers 55 competitors from the supplied `Website privacy archive - 2026-10-10`: 231 captured source documents, 236 links, 55 PDF bundles (1,657 pages), and 62 downloadable files including preserved originals. Coverage distinguishes 52 policy collections, two statement-only entries (Gradie, Markr), and one links-only entry (Graide Network).
+
+Legal positions are summaries of captured vendor claims, each paired with an exact excerpt, PDF page and source URL. They are not independent compliance findings. Source language is preserved in quotes and archive text. Position translations and summaries preserve product/tier qualifications and identified conflicts. The archive is a dated snapshot rather than a live monitor.
+
+Re-import with `python scripts/import-competitors.py ARCHIVE_FOLDER POSITION_SUMMARIES_JSON` (requires pypdf). The position JSON uses the schema in `data/competitor-positions.json`. `npm test` checks every quote against its stated archive page, every source mapping and every file hash.
+
+The deployed Site is publicly accessible without sign-in. Source search, competitor evidence and downloads work anonymously. Live OpenAI generation remains inactive because no key has been provisioned; its existing paid-inference identity check is separate from public browsing.
