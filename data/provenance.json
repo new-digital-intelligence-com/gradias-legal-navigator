@@ -1,0 +1,30 @@
+{
+  "importDate": "2026-10-10",
+  "spreadsheetId": "1jVB6Dcik_MhlS_Dl7jsFdsAC_C1BRRIybylgjxlZ2pM",
+  "documents": [
+    {
+      "filename": "AI Exam Grading - Legal and Regulatory Requirements - Germany.docx",
+      "sha256": "399df95d5fe09c4b21bfb31340c3d9ab3e13d5beb6d5423d507d9d2114a5e5d2"
+    },
+    {
+      "filename": "AI Exam Grading - Legal and Regulatory Requirements - UK.docx",
+      "sha256": "969ad299cb83023aa3efe9e7bea04707ecb19ba9ce269f12221b8af6cc0ebb00"
+    },
+    {
+      "filename": "AI Exam Grading - Legal and Regulatory Requirements - US.docx",
+      "sha256": "b1416acf684e56dcb2bdb81f3f1e04b208c8b4b60b61dbabdf92265d585d19b8"
+    },
+    {
+      "filename": "AI Exam Grading - Legal and Regulatory Requirements Questions Answers.docx",
+      "sha256": "8e0d3eddff3fdc64c39c15cdff095c198494e192236ab17ef8e071604df92a3a"
+    }
+  ],
+  "counts": {
+    "requirements": 60,
+    "instruments": 97,
+    "qa": 22,
+    "states": 16,
+    "sources": 222,
+    "documents": 59
+  }
+}

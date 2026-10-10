@@ -1,0 +1,47 @@
+'use client';
+import {useEffect,useRef,useState} from 'react';
+import {BookOpen,ChevronRight,Globe2,Info,MessageCircle,ShieldCheck,Sparkles,Table2,X} from 'lucide-react';
+import {content,inCountry,countryNames,countryKey,type Requirement,type NavAction} from '@/lib/content';
+import {labels,SourceLink} from '@/components/library-shared';
+import {RequirementMatrix,CountryReader,QALibrary,SourcesLibrary} from '@/components/library-views';
+import {Assistant} from '@/components/assistant';
+export type Tab='matrix'|'countries'|'qa'|'sources';
+const tabs=[{id:'matrix' as Tab,label:'Requirements matrix',icon:Table2},{id:'countries' as Tab,label:'Country views',icon:Globe2},{id:'qa' as Tab,label:'Q&A',icon:MessageCircle},{id:'sources' as Tab,label:'Sources & documents',icon:BookOpen}];
+export type EvidenceSelection={requirement:Requirement;country:string;instrumentId?:string};
+export default function Home(){
+ const [tab,setTab]=useState<Tab>('matrix'),[country,setCountry]=useState('All'),[query,setQuery]=useState('');
+ const [selection,setSelection]=useState<EvidenceSelection|null>(null),[methodology,setMethodology]=useState(false),[assistantOpen,setAssistantOpen]=useState(true);
+ const [target,setTarget]=useState(''),[askPrompt,setAskPrompt]=useState<{text:string;nonce:number}|null>(null);
+ const dialogRef=useRef<HTMLDivElement>(null);const previousFocus=useRef<HTMLElement|null>(null);
+ useEffect(()=>{if(window.matchMedia('(max-width: 850px)').matches)setAssistantOpen(false);},[]);
+ function ask(text:string){setAssistantOpen(true);setAskPrompt({text,nonce:Date.now()});}
+ function openTab(t:Tab){setTab(t);setQuery('');setTarget('');window.history.replaceState(null,'','#'+t);}
+ function navigate(action:NavAction){setTab(action.tab);setQuery('');setTarget(action.target||'');if(window.matchMedia('(max-width: 850px)').matches)setAssistantOpen(false);const c=action.country&&labels[action.country]?action.country:action.country==='de'?'Germany':action.country==='uk'?'UK':action.country==='us'?'US':null;if(c)setCountry(c);
+  if(action.tab==='matrix'&&action.target){const r=content.requirements.find(r=>r.id===action.target);if(r)setSelection({requirement:r,country:c||'All'});}
+  if(action.target==='methodology')setMethodology(true);
+  window.history.replaceState(null,'','#'+(action.target||action.tab));
+ }
+ useEffect(()=>{const h=window.location.hash.slice(1);if(h.startsWith('qa-'))navigate({tab:'qa',target:h,label:''});else if(/^(de|uk|us)-/.test(h))navigate({tab:'countries',target:h,country:h.split('-')[0],label:''});else if(/^R[0-9]/.test(h))navigate({tab:'matrix',target:h,label:''});else if(tabs.some(t=>t.id===h))setTab(h as Tab);},[]);
+ useEffect(()=>{if(!selection&&!methodology)return;previousFocus.current=document.activeElement as HTMLElement;dialogRef.current?.focus();const onKey=(e:KeyboardEvent)=>{if(e.key==='Escape'){setSelection(null);setMethodology(false);}if(e.key==='Tab'){const items=Array.from(dialogRef.current?.querySelectorAll<HTMLElement>('a[href],button,input,select,[tabindex="0"]')||[]);const first=items[0],last=items[items.length-1];if(e.shiftKey&&(document.activeElement===first||document.activeElement===dialogRef.current)){e.preventDefault();last?.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus();}}};document.addEventListener('keydown',onKey);return()=>{document.removeEventListener('keydown',onKey);previousFocus.current?.focus();};},[selection,methodology]);
+ const subtitle=tab==='matrix'?'Explore what each instrument says, with the conditions that matter.':tab==='countries'?'The legal landscape, organized by jurisdiction and primary authority.':tab==='qa'?'Practical questions. Nuanced answers. Every source within reach.':'Trace every requirement back to the research and original documents.';
+ return <div className={'app '+(assistantOpen?'with-assistant':'')}><a className="skip-link" href="#main-content">Skip to content</a>
+ <header className="app-header"><a className="brand" href="#matrix" aria-label="Gradias home" onClick={()=>openTab('matrix')}><span className="brand-crop"><img src="/brand/gradias.png" alt="gradias"/></span></a><span className="header-divider"/><div className="product-name">Legal Navigator<span>AI-assisted exam grading</span></div><div className="header-right"><span className="snapshot"><span className="status-dot"/>Research snapshot <b>10 Oct 2026</b></span><button className="icon-button mobile-assistant" aria-label="Toggle assistant" onClick={()=>setAssistantOpen(!assistantOpen)}><MessageCircle size={20}/></button><span className="workspace-avatar">G</span></div></header>
+ <div className="app-body"><main className="main-content" id="main-content"><nav className="tab-nav" aria-label="Knowledge library">{tabs.map(t=><button key={t.id} className={tab===t.id?'active':''} aria-current={tab===t.id?'page':undefined} onClick={()=>openTab(t.id)}><t.icon size={17}/>{t.label}{t.id==='qa'&&<span className="tab-count">22</span>}</button>)}</nav><div className="workspace-content">
+ <div className="page-heading"><div><div className="eyebrow">GRADIAS KNOWLEDGE LIBRARY <span>/</span> {tab==='matrix'?'REQUIREMENTS':tab==='countries'?'JURISDICTIONS':tab==='qa'?'ANSWERS':'EVIDENCE'}</div><h1>{tabs.find(t=>t.id===tab)?.label}</h1><p>{subtitle}</p></div><button className="button subtle guide-button" onClick={()=>setMethodology(true)}><Info size={16}/>How to read this</button></div>
+ {tab==='matrix'&&<RequirementMatrix country={country} setCountry={setCountry} query={query} setQuery={setQuery} onEvidence={setSelection}/>}
+ {tab==='countries'&&<CountryReader country={country} setCountry={setCountry} target={target} ask={ask}/>}
+ {tab==='qa'&&<QALibrary query={query} setQuery={setQuery} target={target} ask={ask}/>}
+ {tab==='sources'&&<SourcesLibrary country={country} setCountry={setCountry} query={query} setQuery={setQuery} onMethodology={()=>setMethodology(true)}/>}
+ <footer className="workspace-footer"><span><ShieldCheck size={14}/>Built on the supplied Gradias research</span><span>Research cut-off: 10 October 2026 <span>·</span> Scope and conditions apply</span></footer>
+ </div></main>{assistantOpen?<Assistant country={country} tabLabel={tabs.find(t=>t.id===tab)!.label} prompt={askPrompt} navigate={navigate} close={()=>setAssistantOpen(false)}/>:<button className="assistant-fab" onClick={()=>setAssistantOpen(true)}><Sparkles size={18}/>Ask Gradias</button>}</div>
+ {(selection||methodology)&&<div className="modal-backdrop" onMouseDown={e=>{if(e.target===e.currentTarget){setSelection(null);setMethodology(false);}}}><div className="detail-drawer" role="dialog" aria-modal="true" aria-label={methodology?'How to read the research':'Requirement evidence'} ref={dialogRef} tabIndex={-1}><button className="close-dialog icon-button" aria-label="Close details" onClick={()=>{setSelection(null);setMethodology(false);}}><X size={20}/></button>
+ {methodology?<><div className="eyebrow">RESEARCH METHODOLOGY</div><h2>Read the conditions.<br/>Follow the evidence.</h2><p className="drawer-lead">A navigable reference to the supplied research. This library does not certify a product or approve a deployment.</p>{content.readme.slice(1).map(r=><section key={r.label}><h3>{r.label}</h3><p>{r.text}</p></section>)}<SourceLink href={content.meta.spreadsheetUrl}>Original requirements spreadsheet</SourceLink></>:selection&&<><div className="eyebrow">{selection.requirement.id} <span>·</span> {selection.requirement.category}</div><h2>{selection.requirement.title}</h2><p className="drawer-lead">{labels[selection.country]} · Evidence and conditions</p><div className="scope-note"><Info size={16}/><span>The mapping records whether a source states this requirement. Read the trigger, legal status and timing before applying it.</span></div><Evidence selection={selection}/><button className="button primary full-width" onClick={()=>{ask('Explain '+selection.requirement.id+': '+selection.requirement.title+(selection.country==='All'?'':' in '+selection.country));setSelection(null);}}><Sparkles size={15}/>Ask about this requirement</button></>}
+ </div></div>}
+ </div>;
+}
+function Evidence({selection}:{selection:EvidenceSelection}){
+ const instruments=selection.instrumentId?content.instruments.filter(i=>i.id===selection.instrumentId):content.instruments.filter(i=>inCountry(i,selection.country)&&selection.requirement.cells.find(c=>c.instrumentId===i.id)?.value==='Yes');
+ if(!instruments.length)return <p>No instrument in this filtered set states this requirement in the reviewed provisions. This is not a permission conclusion.</p>;
+ return <>{instruments.map(i=>{const cell=selection.requirement.cells.find(c=>c.instrumentId===i.id)!;return <section className="evidence-card" key={i.id}><div className="evidence-heading"><span className="pill">{i.id}</span><span className={'pill '+(cell.value==='Yes'?'green':'neutral')}>{cell.value==='Yes'?'Stated in source':'Not stated'}</span></div><h3>{i.title}</h3><div className="source-meta">{i.type} · {i.country}</div><p className="evidence-note">{cell.note||'Not stated in the reviewed provisions. This does not establish permission or mean no other obligations apply.'}</p><details><summary>Instrument scope and timing</summary><p>{i.scope}</p><p>{i.timingDetail}</p><p>{i.locator}</p></details><div className="inline-sources">{i.urls.map((url,n)=><SourceLink key={url} href={url}>{n===0?'Primary source':'Additional authority'}</SourceLink>)}</div></section>;})}</>;
+}
+
