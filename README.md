@@ -33,9 +33,9 @@ npm run build
 
 ## Assistant
 
-The server uses `OPENAI_API_KEY` and optional `OPENAI_MODEL` (default `gpt-4.1-mini`). No key is included. Live AI was not activated or tested in the initial delivery because local secret-save confirmation was declined.
+The server uses `OPENAI_API_KEY` and optional `OPENAI_MODEL` (default `gpt-4.1-mini`). Production credentials are held in Sites runtime secrets; no key is included in this repository.
 
-Configure credentials through the approved credential and hosting-secret workflows. Never include secrets in browser code or the repository. Local `.env*` files are ignored. Paid inference requires the trusted Sites `oai-authenticated-user-id` identity header. A different host needs its own verified authentication adapter; never trust a client-supplied identity header.
+Configure credentials through the approved credential and hosting-secret workflows. Never include secrets in browser code or the repository. Local `.env*` files are ignored. The public assistant does not require sign-in. Same-origin checks, input/output limits and best-effort per-isolate limits apply: six AI calls per client IP per minute, thirty total per minute and four concurrent calls. These limits reset with an isolate and are not an account-wide spending cap. Navigation and requests without matching evidence do not call OpenAI. Provider-level spend limits must be configured separately in the OpenAI project.
 
 When live AI is enabled, questions, recent conversation and retrieved passages are sent to OpenAI with `store:false`. Chat stays in the current browser component session. Answers use only imported evidence; citation IDs are validated. This validation does not independently establish legal accuracy. The assistant reports missing evidence and does not browse the wider web.
 

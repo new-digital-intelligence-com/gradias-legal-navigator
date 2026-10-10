@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 const base=process.env.TEST_URL||'http://127.0.0.1:5173';
 async function post(body,origin=base){return fetch(base+'/api/ask',{method:'POST',headers:{Origin:origin,'Content-Type':'application/json'},body:typeof body==='string'?body:JSON.stringify(body)});}
 const health=await fetch(base+'/api/ask').then(r=>r.json());assert.ok(['search','ai'].includes(health.mode));
+if(process.env.TEST_LIVE_AI==='1')assert.equal(health.mode,'ai','Live AI must be configured.');
 const archiveResponse=await fetch(base+'/competitors/04.txt');assert.equal(archiveResponse.status,200);const archive=await archiveResponse.json();assert.equal(archive.pages.length,10);assert.match(archive.pages[2].text,/No AI model training/);
 assert.equal((await post({question:'Consent'},'https://untrusted.example')).status,403);
 assert.equal((await post('{broken')).status,400);
@@ -17,4 +18,10 @@ if(health.mode==='search'){
  const scoped=await post({question:'What about data deletion?',competitorId:'competitor-04'}).then(r=>r.json());assert.ok(scoped.citations.length);assert.ok(scoped.citations.every(c=>c.target.startsWith('competitor-04-p')));
  const linksOnly=await post({question:'AI training',competitorId:'competitor-54'}).then(r=>r.json());assert.equal(linksOnly.citations.length,0);
  console.log('PASS: legal and competitor retrieval, comparison, navigation, selected scope, missing evidence, origin checks and input validation.');
-}else console.log('PASS: input guards; paid inference requires authenticated hosted testing.');
+}else if(process.env.TEST_LIVE_AI==='1'){
+ const response=await post({question:'Does CoGrader use student work for AI model training?',competitorId:'competitor-04'});
+ const answer=await response.json();assert.equal(response.status,200,answer.error);assert.equal(answer.mode,'ai');assert.ok(answer.citations.length);assert.ok(answer.citations.every(c=>c.target.startsWith('competitor-04-p')));assert.match(answer.text,/\[competitor-04-p\d+\]/);assert.doesNotMatch(answer.text,/sk-proj-/);
+ const nav=await post({question:'Show me the German country view'}).then(r=>r.json());assert.equal(nav.action.tab,'countries');
+ const unknown=await post({question:'Tell me about extraterrestrial pizza on Jupiter'}).then(r=>r.json());assert.equal(unknown.citations.length,0);
+ console.log('PASS: anonymous live AI answer with source citations, navigation, missing evidence and input guards.');
+}else console.log('PASS: input guards. Set TEST_LIVE_AI=1 to make one paid, anonymous AI smoke-test request.');

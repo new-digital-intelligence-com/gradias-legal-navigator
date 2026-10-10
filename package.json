@@ -13,7 +13,7 @@
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate",
     "typecheck": "tsc --noEmit",
-    "test": "node scripts/check-content.mjs && node scripts/check-competitors.mjs",
+    "test": "node scripts/check-content.mjs && node scripts/check-competitors.mjs && node scripts/check-assistant-limit.mjs",
     "test:api": "node scripts/check-api.mjs"
   },
   "dependencies": {
