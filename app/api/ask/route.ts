@@ -3,13 +3,13 @@ import {mentionedCompetitors,competitors} from '@/lib/competitors';
 import {content,retrieve,navigationIntent,type Passage} from '@/lib/content';
 import {assistantLimiter} from '@/lib/assistant-rate-limit';
 import {assistantInstructions} from '@/lib/assistant-instructions';
+import {hasSameOrigin,requestClientIp} from '@/lib/request-context';
 export const dynamic='force-dynamic';
 const headers={'Cache-Control':'private, no-store'};
 const reply=(data:unknown,status=200)=>Response.json(data,{status,headers});
 export async function GET(){return reply({mode:process.env.OPENAI_API_KEY?'ai':'search',reviewDate:content.meta.reviewDate});}
 export async function POST(request:Request){
- const origin=request.headers.get('origin');
- if(!origin||origin!==new URL(request.url).origin)return reply({error:'This request must come from the app.'},403);
+ if(!hasSameOrigin(request))return reply({error:'This request must come from the app.'},403);
  if(!request.headers.get('content-type')?.includes('application/json'))return reply({error:'JSON is required.'},415);
  const body=await request.text();if(body.length>20000)return reply({error:'Please shorten your question.'},413);
  let input:{question?:unknown;country?:unknown;history?:unknown;competitorId?:unknown};try{input=JSON.parse(body);}catch{return reply({error:'Invalid request.'},400);}
@@ -24,7 +24,7 @@ export async function POST(request:Request){
  if(!process.env.OPENAI_API_KEY)return reply({mode:'search',text:action?'I can take you there. Use the navigation button below.':refs.length?'Here are the closest passages in the supplied research. Open a passage to read its full context.':'I could not find a relevant passage in the supplied research. Try a specific country, law, or topic.',citations:refs.slice(0,3).map(cite),action});
  if(action)return reply({mode:'ai',text:'I can take you there. Use the navigation button below.',citations:refs.slice(0,3).map(cite),action});
  if(!refs.length)return reply({mode:'ai',text:'The supplied documents do not contain enough evidence to answer that. Try a narrower question or review the source library.',citations:[],action});
- const release=assistantLimiter.acquire(request.headers.get('cf-connecting-ip')||'anonymous');
+ const release=assistantLimiter.acquire(requestClientIp(request));
  if(!release)return Response.json({error:'The assistant is busy. Please try again in a minute.',fallback:refs.slice(0,3).map(cite)},{status:429,headers:{...headers,'Retry-After':'60'}});
  const schema={type:'object',properties:{paragraphs:{type:'array',minItems:1,items:{type:'object',properties:{text:{type:'string'},citationIds:{type:'array',minItems:1,items:{type:'string',enum:refs.map(p=>p.id)}}},required:['text','citationIds'],additionalProperties:false}}},required:['paragraphs'],additionalProperties:false};
  try{

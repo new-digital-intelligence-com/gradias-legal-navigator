@@ -31,6 +31,18 @@ npm run build
 
 `npm start` previews the production Worker build. Built with React, TypeScript, Vinext/Vite and the Sites Cloudflare Worker integration.
 
+## Railway deployment
+
+`railway.json` builds the same application with Next.js for a production Node server:
+
+```sh
+npm ci
+npm run build:railway
+npm run start:railway
+```
+
+Railway supplies `PORT`; the server listens on `0.0.0.0`. Configure `APP_URL` to the public HTTPS origin, `OPENAI_API_KEY` as a server-side secret, and optionally `OPENAI_MODEL`. Keep one replica because assistant rate limits are process-local. The health check is `/api/ask`. The repository contains all research data and document downloads; no database or persistent volume is required. The original Sites commands remain available.
+
 ## Assistant
 
 The server uses `OPENAI_API_KEY` and optional `OPENAI_MODEL` (default `gpt-4.1-mini`). Production credentials are held in Sites runtime secrets; no key is included in this repository.

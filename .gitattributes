@@ -1,0 +1,3 @@
+# Archive hashes require byte-for-byte preservation on every checkout.
+public/documents/** -text
+public/competitors/** -text
