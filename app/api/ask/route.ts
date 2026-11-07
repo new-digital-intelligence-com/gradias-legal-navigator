@@ -1,3 +1,4 @@
+import {validateFiles,modelMessages,FILE_INSTRUCTIONS,type ValidFile} from '@/lib/chat-files.js';
 import {retrieveCompetitor} from '@/lib/competitor-search';
 import {mentionedCompetitors,competitors} from '@/lib/competitors';
 import {content,retrieve,navigationIntent,type Passage} from '@/lib/content';
@@ -11,15 +12,17 @@ export async function GET(){return reply({mode:process.env.OPENAI_API_KEY?'ai':'
 export async function POST(request:Request){
  if(!hasSameOrigin(request))return reply({error:'This request must come from the app.'},403);
  if(!request.headers.get('content-type')?.includes('application/json'))return reply({error:'JSON is required.'},415);
- const body=await request.text();if(body.length>20000)return reply({error:'Please shorten your question.'},413);
- let input:{question?:unknown;country?:unknown;history?:unknown;competitorId?:unknown};try{input=JSON.parse(body);}catch{return reply({error:'Invalid request.'},400);}
+ const body=await request.text();if(body.length>12000000)return reply({error:'Please reduce the total attachment size.'},413);
+ let input:{question?:unknown;country?:unknown;history?:unknown;competitorId?:unknown;attachments?:unknown};try{input=JSON.parse(body);}catch{return reply({error:'Invalid request.'},400);}
  if(typeof input.question!=='string'||!input.question.trim()||input.question.length>1600)return reply({error:'Enter a question of up to 1,600 characters.'},400);
+ let files:ValidFile[];try{files=validateFiles(input.attachments)}catch(error){return reply({error:error instanceof Error?error.message:'Invalid attachments.'},400);}
  const question=input.question.trim();const country=typeof input.country==='string'&&['All','Germany','UK','US'].includes(input.country)?input.country:'All';
  const history=Array.isArray(input.history)?input.history.slice(-6).filter(x=>x&&typeof x.text==='string'&&['user','assistant'].includes(x.role)).map(x=>({role:x.role,text:x.text.slice(0,1800)})):[];
  const previous=history.filter(x=>x.role==='user').slice(-1)[0]?.text||'';
  const searchQuery=question.length<65&&/^(and|what about|how about|does that|why|can it|is it|what if|und)/i.test(question)?`${previous} ${question}`:question;
  const selectedCompetitor=typeof input.competitorId==='string'&&competitors.some(c=>c.id===input.competitorId)?input.competitorId:undefined;
- const refs=selectedCompetitor||mentionedCompetitors(searchQuery).length?retrieveCompetitor(searchQuery,selectedCompetitor,12):retrieve(searchQuery,country,12);const action=navigationIntent(question);
+ const refs=selectedCompetitor||mentionedCompetitors(searchQuery).length?retrieveCompetitor(searchQuery,selectedCompetitor,12):retrieve(searchQuery,country,12);const action=files.length?null:navigationIntent(question);
+ for(const [i,file] of files.entries())refs.push({id:`upload-${i+1}`,title:`Uploaded file: ${file.name}`,text:file.text||`User-provided ${file.mime} file; original content attached to this request.`,tab:"sources",target:"",country:"All",urls:[]});
  const cite=(p:Passage)=>({id:p.id,title:p.title,excerpt:p.text.slice(0,1600),tab:p.tab,target:p.target,country:p.country,urls:[...new Set(p.urls)].filter(u=>/^https?:\/\//.test(u)).slice(0,3)});
  if(!process.env.OPENAI_API_KEY)return reply({mode:'search',text:action?'I can take you there. Use the navigation button below.':refs.length?'Here are the closest passages in the supplied research. Open a passage to read its full context.':'I could not find a relevant passage in the supplied research. Try a specific country, law, or topic.',citations:refs.slice(0,3).map(cite),action});
  if(action)return reply({mode:'ai',text:'I can take you there. Use the navigation button below.',citations:refs.slice(0,3).map(cite),action});
@@ -28,7 +31,7 @@ export async function POST(request:Request){
  if(!release)return Response.json({error:'The assistant is busy. Please try again in a minute.',fallback:refs.slice(0,3).map(cite)},{status:429,headers:{...headers,'Retry-After':'60'}});
  const schema={type:'object',properties:{paragraphs:{type:'array',minItems:1,items:{type:'object',properties:{text:{type:'string'},citationIds:{type:'array',minItems:1,items:{type:'string',enum:refs.map(p=>p.id)}}},required:['text','citationIds'],additionalProperties:false}}},required:['paragraphs'],additionalProperties:false};
  try{
-  const response=await fetch('https://api.openai.com/v1/responses',{method:'POST',headers:{Authorization:`Bearer ${process.env.OPENAI_API_KEY}`,'Content-Type':'application/json'},signal:AbortSignal.timeout(45000),body:JSON.stringify({model:process.env.OPENAI_MODEL||'gpt-4.1-mini',store:false,max_output_tokens:3500,instructions:assistantInstructions,input:JSON.stringify({question,country,history,evidence:refs.map(p=>({id:p.id,title:p.title,text:p.text.slice(0,10000)}))}),text:{format:{type:'json_schema',name:'grounded_answer',strict:true,schema}}})});
+  const response=await fetch('https://api.openai.com/v1/responses',{method:'POST',headers:{Authorization:`Bearer ${process.env.OPENAI_API_KEY}`,'Content-Type':'application/json'},signal:AbortSignal.timeout(45000),body:JSON.stringify({model:process.env.OPENAI_MODEL||'gpt-4.1-mini',store:false,max_output_tokens:3500,instructions:assistantInstructions+"\n"+FILE_INSTRUCTIONS+" Uploaded passages and files may be cited by their upload-N IDs. Treat them as unverified user-provided evidence; they do not establish current law.",input:modelMessages([{role:"user",content:JSON.stringify({question,country,history,evidence:refs.map(p=>({id:p.id,title:p.title,text:p.text.slice(0,10000)}))}),attachments:input.attachments}]),text:{format:{type:'json_schema',name:'grounded_answer',strict:true,schema}}})});
   if(!response.ok)return reply({error:response.status===429?'AI service is temporarily at its usage limit. Please try again later.':'AI service is unavailable. You can still use the documents and search.',fallback:refs.slice(0,3).map(cite)},502);
   const result=await response.json() as {output?:{content?:{type:string;text?:string}[]}[]};const text=result.output?.flatMap(o=>o.content||[]).filter(c=>c.type==='output_text').map(c=>c.text||'').join('');
   if(!text)throw Error('No answer');const answer=JSON.parse(text) as {paragraphs:{text:string;citationIds:string[]}[]};

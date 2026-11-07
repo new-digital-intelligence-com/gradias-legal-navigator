@@ -1,0 +1,15 @@
+'use client';
+import {useState} from 'react';
+export type ChatFile={name:string;data:string;size:number};
+const accept='.txt,.md,.csv,.tsv,.json,.pdf,.png,.jpg,.jpeg,.webp';
+export function FilePicker({files,onChange,disabled,onReading}:{files:ChatFile[];onChange:(files:ChatFile[])=>void;disabled:boolean;onReading:(reading:boolean)=>void}) {
+ const [error,setError]=useState('');
+ return <div style={{display:'grid',gap:6,marginBottom:10,fontSize:12}}>
+  <label>Attach files<input aria-label="Attach files to your message" type="file" multiple accept={accept} disabled={disabled} style={{display:'block',maxWidth:'100%'}} onChange={async event=>{const field=event.currentTarget;const selected=Array.from(field.files||[]);onReading(true);setError('');try{if(files.length+selected.length>3)throw Error('Attach up to three files.');if(files.reduce((n,f)=>n+f.size,0)+selected.reduce((n,f)=>n+f.size,0)>8*1024*1024)throw Error('Attachments must total at most 8 MB.');const added:ChatFile[]=[];for(const file of selected){if(!accept.split(',').includes('.'+file.name.split('.').at(-1)?.toLowerCase()))throw Error('Unsupported file type. Use one of the formats below.');if(!file.size||file.size>5*1024*1024)throw Error(file.name+': use a non-empty file up to 5 MB.');const data=await new Promise<string>((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(String(reader.result).split(',')[1]);reader.onerror=()=>reject(Error('Could not read '+file.name));reader.readAsDataURL(file)});added.push({name:file.name,data,size:file.size})}onChange([...files,...added]);}catch(e){setError(e instanceof Error?e.message:'Could not read the file.')}finally{field.value='';onReading(false);}}}/></label>
+  {files.map((file,i)=><div key={i} style={{overflowWrap:'anywhere'}}>{file.name} <button type="button" disabled={disabled} aria-label={'Remove '+file.name} onClick={()=>onChange(files.filter((_,n)=>n!==i))}>Remove</button></div>)}
+  <small>PDF, images, TXT, Markdown, CSV, TSV or JSON. Up to 3 files, 5 MB each, 8 MB total. Files are sent with your message.</small>
+  {error&&<p role="alert" style={{color:'#a42838'}}>{error}</p>}
+ </div>;
+}
+export function downloadText(text:string,name:string) {const url=URL.createObjectURL(new Blob([text],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);}
+export function DownloadAnswer({text,disabled=false}:{text:string;disabled?:boolean}) {if(!text)return null;const blocks=Array.from(text.matchAll(/```(csv|tsv|json|txt|markdown|md)\s*\n([\s\S]*?)\n```/g));return <div style={{display:'flex',gap:8,flexWrap:'wrap',marginTop:8,fontSize:12}}><button type="button" disabled={disabled} onClick={()=>downloadText(text,'assistant-answer.txt')}>Download answer</button>{blocks.map((m,i)=><button key={i} type="button" disabled={disabled} onClick={()=>downloadText(m[2],'assistant-output.'+(m[1]==='markdown'?'md':m[1]))}>Download .{m[1]}</button>)}</div>;}
