@@ -43,6 +43,8 @@ The 59 research files and 62 competitor archive files included in the repository
 
 Run `npm test`, `npm run typecheck`, `npm run build:railway` and `npm run test:api` against the local server. The document-feature tests mock Google HTTP calls and cover recursive paging, additions/deletions, permission revocation, reader upload denial, authenticated uploads, OAuth state/PKCE, cookie integrity and export safety.
 
-Before release, verify a real Google sign-in, a reader account, an editor upload, and an externally added document appearing within 30 seconds. These live checks require the configured OAuth client and actual Google consent; mocked tests do not establish that the deployment is connected.
+Live validation on 21 November 2026 used the internal NDI Google Cloud project `gradias-legal-navigator`. Google sign-in with the existing folder permissions loaded 434 documents. Uploading the 16-state CSV through the app placed it in the configured root folder. The corresponding HTML file, added directly through Drive, appeared automatically at the next poll about 26 seconds later. The resulting folder contained 436 documents. Reader upload denial and revoked access are covered by the mocked permission tests; a separate live reader account was not used.
+
+The OAuth web client has the production callback above and `http://127.0.0.1:3107/api/auth/google/callback` for the local release check. Secrets are stored server-side and excluded from version control. Recheck production sign-in after deployment; local validation alone does not establish that the deployed credentials are connected.
 
 Google references: [web-server OAuth](https://developers.google.com/identity/protocols/oauth2/web-server), [shared-drive support](https://developers.google.com/workspace/drive/api/guides/enable-shareddrives), [file uploads](https://developers.google.com/workspace/drive/api/guides/manage-uploads).
