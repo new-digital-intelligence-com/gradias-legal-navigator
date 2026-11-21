@@ -8,6 +8,12 @@ assert.equal((await post({question:'Consent'},'https://untrusted.example')).stat
 assert.equal((await post('{broken')).status,400);
 assert.equal((await post({question:''})).status,400);
 assert.equal((await post({question:'a'.repeat(1601)})).status,400);
+const states=await post({question:'Gib mir eine Tabelle mit den 16 Richtlinien zur KI Nutzung in Schulen per Bundesland als Download',country:'UK'}).then(r=>r.json());
+assert.equal(states.table.rows.length,16,'all states, independent of selected country and API credentials');assert.equal(states.citations.length,16);assert.equal(states.action,null);
+assert.ok(states.table.rows.every(r=>r.cells.length===states.table.columns.length&&r.citationIds.every(id=>states.citations.some(c=>c.id===id))));
+const stateFollowup=await post({question:'Das bitte als CSV herunterladen',history:[{role:'user',text:'Welche KI-Richtlinien gibt es für Schulen in den 16 Bundesländern?'}]}).then(r=>r.json());assert.equal(stateFollowup.table.rows.length,16);
+assert.equal((await fetch(base+'/api/documents',{method:'POST',headers:{Origin:'https://untrusted.example'}})).status,403);
+const drive=await fetch(base+'/api/documents').then(r=>r.json());assert.ok(drive.folder.url.startsWith('https://drive.google.com/drive/folders/'));assert.equal(drive.connected,false);
 if(health.mode==='search'){
  const consent=await post({question:'Is student consent required?'}).then(r=>r.json());assert.match(consent.citations[0].title,/student.*consent/i);assert.match(consent.citations[0].excerpt,/Not automatically/);
  const nav=await post({question:'Show me the German country view'}).then(r=>r.json());assert.equal(nav.action.tab,'countries');assert.equal(nav.action.country,'Germany');

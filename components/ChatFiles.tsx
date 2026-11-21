@@ -11,5 +11,5 @@ export function FilePicker({files,onChange,disabled,onReading}:{files:ChatFile[]
   {error&&<p role="alert" style={{color:'#a42838'}}>{error}</p>}
  </div>;
 }
-export function downloadText(text:string,name:string) {const url=URL.createObjectURL(new Blob([text],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);}
+export function downloadText(text:string,name:string,mime='text/plain;charset=utf-8') {const url=URL.createObjectURL(new Blob([text],{type:mime}));const a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);}
 export function DownloadAnswer({text,disabled=false}:{text:string;disabled?:boolean}) {if(!text)return null;const blocks=Array.from(text.matchAll(/```(csv|tsv|json|txt|markdown|md)\s*\n([\s\S]*?)\n```/g));return <div style={{display:'flex',gap:8,flexWrap:'wrap',marginTop:8,fontSize:12}}><button type="button" disabled={disabled} onClick={()=>downloadText(text,'assistant-answer.txt')}>Download answer</button>{blocks.map((m,i)=><button key={i} type="button" disabled={disabled} onClick={()=>downloadText(m[2],'assistant-output.'+(m[1]==='markdown'?'md':m[1]))}>Download .{m[1]}</button>)}</div>;}
