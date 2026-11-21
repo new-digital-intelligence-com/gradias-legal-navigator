@@ -45,6 +45,14 @@ Railway supplies `PORT`; the server listens on `0.0.0.0`. Configure `APP_URL` to
 
 ## Assistant
 
+Tables are structured answers with visible rows and CSV / printable HTML downloads. Requests for school AI guidance across the 16 German states export the complete reviewed state dataset directly, including qualifications, primary URLs and the research date. They do not depend on the top-12 passage search or an OpenAI call. The same table is available in the German country view. Other requested tables use the grounded response schema and validate every row's citations.
+
+## Google Drive documents
+
+The Sources & documents view connects the existing `12 Legal and Regulatory / Data Protection and Compliance` Drive folder, including its source-research and competitor-archive subfolders. Authorized Google users can browse live files, open the folder in Drive, and upload when their Google account has write permission. External additions appear automatically within 30 seconds while the view is visible. See [Google Drive setup](docs/google-drive.md) for the required OAuth client, server secrets, access model and release checks. New files join the document library; reviewed legal conclusions remain tied to their research snapshot until deliberately re-imported.
+
+## Assistant configuration
+
 The server uses `OPENAI_API_KEY` and optional `OPENAI_MODEL` (default `gpt-4.1-mini`). Production credentials are held in Sites runtime secrets; no key is included in this repository.
 
 Configure credentials through the approved credential and hosting-secret workflows. Never include secrets in browser code or the repository. Local `.env*` files are ignored. The public assistant does not require sign-in. Same-origin checks, input/output limits and best-effort per-isolate limits apply: six AI calls per client IP per minute, thirty total per minute and four concurrent calls. These limits reset with an isolate and are not an account-wide spending cap. Navigation and requests without matching evidence do not call OpenAI. Provider-level spend limits must be configured separately in the OpenAI project.
