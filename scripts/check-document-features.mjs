@@ -10,10 +10,10 @@ import ts from 'typescript';
 const root=path.resolve(import.meta.dirname,'..');
 const temp=fs.mkdtempSync(path.join(os.tmpdir(),'gradias-document-tests-'));
 fs.writeFileSync(path.join(temp,'package.json'),'{"type":"commonjs"}');
-const modules=['lib/answer-tables','lib/drive-config','lib/google-session','lib/google-drive','lib/request-context','lib/assistant-rate-limit','app/api/documents/route','app/api/auth/google/route','app/api/auth/google/callback/route','app/api/auth/logout/route'];
+const modules=['lib/answer-tables','lib/xlsx-export','lib/drive-config','lib/google-session','lib/google-drive','lib/request-context','lib/assistant-rate-limit','app/api/documents/route','app/api/auth/google/route','app/api/auth/google/callback/route','app/api/auth/logout/route'];
 for(const name of modules){
  const out=path.join(temp,name+'.js');fs.mkdirSync(path.dirname(out),{recursive:true});
- const source=fs.readFileSync(path.join(root,name+'.ts'),'utf8').replace(/(['"])@\/([^'"]+)\1/g,(_,quote,target)=>quote+path.relative(path.dirname(out),path.join(temp,target)).replaceAll('\\','/')+quote);
+ const source=fs.readFileSync(path.join(root,name+'.ts'),'utf8').replace(/(['"])@\/([^'"]+)\1/g,(_,quote,target)=>quote+path.relative(path.dirname(out),path.join(temp,target)).replaceAll('\\','/')+quote).replace(/(['"])exceljs\1/g,JSON.stringify(createRequire(import.meta.url).resolve('exceljs')));
  fs.writeFileSync(out,ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText);
 }
 const require=createRequire(path.join(temp,'test.cjs'));
@@ -32,8 +32,24 @@ try{
  assert.ok(!tables.wantsStateOverview('Tabelle der Wettbewerber','Welche KI-Richtlinien gelten in den Bundesländern?'));
  assert.equal(tables.validateAnswerTable(table,new Set(table.rows.flatMap(r=>r.citationIds))),table);
  assert.throws(()=>tables.validateAnswerTable({...table,rows:[{cells:['wrong'],citationIds:['invented']}]},new Set()),/Ungrounded/);
- const csv=tables.tableCSV(table);assert.ok(csv.startsWith('\uFEFF'));assert.match(csv,/Baden-Württemberg/);assert.match(csv,/https:\/\/www\.berlin\.de/);
- assert.equal(tables.csvCell('=HYPERLINK("x")'),'"\'=HYPERLINK(""x"")"');assert.equal(tables.csvCell(' \t@SUM(1)'),'"\' \t@SUM(1)"');
+ for(const format of ['Excel','XLSX','Office'])assert.ok(tables.wantsStateOverview(`Das bitte als ${format}`,'Welche KI-Richtlinien gelten in den Schulen der 16 Bundesländer?'));
+ const {workbookXLSX}=require('./lib/xlsx-export.js');
+ const ExcelJS=createRequire(import.meta.url)('exceljs');
+ const sources=content.states.map((state,i)=>({id:`state-${i}`,title:state.instrument,urls:[state.url]}));
+ const bytes=await workbookXLSX({...table,rows:table.rows.map(row=>row.cells),sources});
+ assert.equal(Buffer.from(bytes).subarray(0,2).toString(),'PK','real XLSX ZIP container');
+ const reopened=new ExcelJS.Workbook();await reopened.xlsx.load(bytes);
+ const sheet=reopened.getWorksheet('Tabelle');assert.equal(sheet.rowCount,20);assert.equal(sheet.columnCount,7);
+ assert.equal(sheet.getCell('A1').value,table.title);assert.equal(sheet.getCell('A2').value,table.note);
+ assert.equal(sheet.views[0].state,'frozen');assert.equal(sheet.views[0].ySplit,4);assert.equal(sheet.autoFilter,'A4:G20');
+ table.rows.forEach((row,i)=>row.cells.forEach((value,j)=>{const cell=sheet.getCell(i+5,j+1);assert.equal(cell.text,value,`preserve row ${i}, column ${j}`);assert.equal(cell.formula,undefined);}));
+ const sourceSheet=reopened.getWorksheet('Quellen');assert.equal(sourceSheet.rowCount,20);assert.equal(sourceSheet.getCell('C5').hyperlink,sources[0].urls[0]);
+ const literals=['=HYPERLINK("https://evil.example")','+1','-1','@SUM(1)','00123','01.02.2026','Line 1\nLine 2','Äöü ß & < >'];
+ const literalBook=new ExcelJS.Workbook();await literalBook.xlsx.load(await workbookXLSX({title:'Literal text',columns:['Text','Empty'],rows:literals.map(value=>[value,'']),note:'No formula execution'}));
+ literals.forEach((value,i)=>{const cell=literalBook.getWorksheet('Tabelle').getCell(i+5,1);assert.equal(cell.value,value);assert.equal(cell.type,ExcelJS.ValueType.String);});
+ const matrixBook=new ExcelJS.Workbook();await matrixBook.xlsx.load(await workbookXLSX({title:'Requirements',columns:['ID',...content.instruments.map(i=>i.id)],rows:content.requirements.map(r=>[r.id,...content.instruments.map(i=>r.cells.find(c=>c.instrumentId===i.id)?.value||'')]),note:'Research snapshot'}));
+ assert.equal(matrixBook.getWorksheet('Tabelle').columnCount,98);assert.equal(matrixBook.getWorksheet('Tabelle').rowCount,64);
+ const emptyBook=new ExcelJS.Workbook();await emptyBook.xlsx.load(await workbookXLSX({title:'No matches',columns:['ID','Requirement'],rows:[],note:'Filtered view'}));assert.equal(emptyBook.getWorksheet('Tabelle').rowCount,4);
  const malicious={title:'<script>alert(1)</script>',columns:['A','B'],rows:[{cells:['<img src=x onerror=alert(1)>','safe'],citationIds:['s']}],note:'<b>note</b>'};
  assert.doesNotMatch(tables.tableHTML(malicious),/<script>|<img/);
 
@@ -86,7 +102,7 @@ try{
  globalThis.fetch=async(url,options)=>{assert.equal(String(url),'https://oauth2.googleapis.com/token');assert.equal(options.body.get('grant_type'),'refresh_token');return Response.json({access_token:'renewed-token',expires_in:3600});};
  const expiredToken={...session,tokenExpires:0,refreshToken:'refresh-token'};
  const refreshed=await auth.googleSession(new Request('https://gradias.example',{headers:{Cookie:auth.sessionCookie(expiredToken).split(';')[0]}}));assert.equal(refreshed.session.accessToken,'renewed-token');assert.ok(refreshed.setCookie);
- console.log('PASS: 16-state completeness, follow-up exports, citations, CSV injection, HTML escaping, encrypted sessions, OAuth state/PKCE, recursive shared-Drive pagination, external additions/deletions, permission revocation, upload authorization and destination.');
+ console.log('PASS: 16-state completeness, Excel/Office follow-ups, XLSX round-trip and literal text safety, wide/empty matrices, citations, HTML escaping, encrypted sessions, OAuth state/PKCE, recursive shared-Drive pagination, external additions/deletions, permission revocation, upload authorization and destination.');
 }finally{
  globalThis.fetch=originalFetch;for(const k of Object.keys(process.env))if(!(k in originalEnv))delete process.env[k];Object.assign(process.env,originalEnv);
  fs.rmSync(temp,{recursive:true,force:true});

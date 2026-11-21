@@ -4,7 +4,7 @@ A responsive legal research library for AI-assisted exam grading, using Gradias 
 
 ## Features
 
-- Requirements matrix: 60 requirements across 97 instruments, source notes, filters and CSV export.
+- Requirements matrix: 60 requirements across 97 instruments, source notes, filters and Excel (.xlsx) export.
 - Country views: Germany, United Kingdom, United States, and all 16 German states' guidance.
 - Q&A: 22 searchable answers from the supplied document.
 - Sources: 222 links with provenance and 59 original document downloads with SHA-256 hashes.
@@ -45,7 +45,7 @@ Railway supplies `PORT`; the server listens on `0.0.0.0`. Configure `APP_URL` to
 
 ## Assistant
 
-Tables are structured answers with visible rows and CSV / printable HTML downloads. Requests for school AI guidance across the 16 German states export the complete reviewed state dataset directly, including qualifications, primary URLs and the research date. They do not depend on the top-12 passage search or an OpenAI call. The same table is available in the German country view. Other requested tables use the grounded response schema and validate every row's citations.
+Tables are structured answers with visible rows and Excel (.xlsx) / printable HTML downloads. Excel workbooks preserve all rows, source links and research notes, with wrapped text, filters, frozen headings and a source sheet when citations are provided. Text remains literal rather than executable spreadsheet formulas. The Excel writer loads only when a download is requested. Requests for school AI guidance across the 16 German states export the complete reviewed state dataset directly, including qualifications, primary URLs and the research date. They do not depend on the top-12 passage search or an OpenAI call. The same table is available in the German country view. Other requested tables use the grounded response schema and validate every row's citations.
 
 ## Google Drive documents
 
