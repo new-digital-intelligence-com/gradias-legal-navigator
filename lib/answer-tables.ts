@@ -9,7 +9,7 @@ export type AnswerTable = {
 export type ExportCitation = {id:string;title:string;urls:string[]};
 
 const normalize=(s:string)=>s.toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'');
-export const wantsTable=(q:string)=>/\b(tabelle\w*|table\w*|csv|excel|spreadsheet|download\w*|herunterlad\w*|datei|export\w*)\b/i.test(q);
+export const wantsTable=(q:string)=>/\b(tabelle\w*|table\w*|csv|xlsx|office|excel|spreadsheet|download\w*|herunterlad\w*|datei|export\w*)\b/i.test(q);
 export function wantsStateOverview(question:string,previous='') {
   // Follow-up exports reuse the last user topic; unrelated new questions do not.
   const q=normalize(question);
@@ -39,12 +39,6 @@ export function validateAnswerTable(value:unknown,allowed:Set<string>):AnswerTab
   return t;
 }
 
-// Quoting alone does not prevent spreadsheet formula execution.
-export function csvCell(value:string){const safe=/^[\s\uFEFF]*[=+@-]/.test(value)?"'"+value:value;return '"'+safe.replaceAll('"','""')+'"';}
-export function tableCSV(table:AnswerTable,citations:ExportCitation[]=[]){
-  const source=(ids:string[])=>ids.map(id=>citations.find(c=>c.id===id)).filter((c):c is ExportCitation=>!!c).map(c=>`${c.title}${c.urls.length?' — '+c.urls.join(' '):''}`).join('\n');
-  return '\uFEFF'+[ [...table.columns,'Quellennachweis','Recherchehinweis'], ...table.rows.map(r=>[...r.cells,source(r.citationIds),table.note]) ].map(r=>r.map(csvCell).join(',')).join('\r\n');
-}
 const escapeHTML=(s:string)=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!));
 export function tableHTML(table:AnswerTable,citations:ExportCitation[]=[]){
   return `<!doctype html><html lang="de"><meta charset="utf-8"><title>${escapeHTML(table.title)}</title><style>body{font:14px system-ui;margin:32px;color:#163047}table{border-collapse:collapse;width:100%}th,td{border:1px solid #bbcbd5;padding:10px;text-align:left;vertical-align:top;white-space:pre-wrap;overflow-wrap:anywhere}th{background:#edf4fa}p{line-height:1.5}@media print{body{margin:0;font-size:9px}thead{display:table-header-group}tr{break-inside:avoid}}</style><h1>${escapeHTML(table.title)}</h1><p>${escapeHTML(table.note)}</p><table><thead><tr>${[...table.columns,'Quellen'].map(c=>`<th>${escapeHTML(c)}</th>`).join('')}</tr></thead><tbody>${table.rows.map(r=>`<tr>${[...r.cells,r.citationIds.map(id=>{const c=citations.find(c=>c.id===id);return c?`${c.title}\n${c.urls.join('\n')}`:id;}).join('\n\n')].map(c=>`<td>${escapeHTML(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></html>`;
